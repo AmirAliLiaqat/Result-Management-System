@@ -4,5 +4,5 @@
 
 # Features 
 - Provides support for student Login 
-- Support for exame
+- Support for exam
 - Watch gradebook
