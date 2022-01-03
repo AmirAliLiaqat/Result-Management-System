@@ -60,7 +60,7 @@
    <!-------------------- Section Start -------------------->
     <section>
         <div class="container my-5 py-4" style="background:#ccc; border-radius:15px">
-            <h1 class="text-center" style="text-transform:uppercase;">Insert the student data</h1>
+            <h1 class="text-center" style="text-transform:uppercase;">Please Insert the student data</h1>
             <div class="row justify-content-center">
                <div class="col-md-8">
                     <form action="" method="post">
