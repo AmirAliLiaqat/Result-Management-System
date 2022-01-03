@@ -1,4 +1,5 @@
 # Result management system
+Allows students to take exams and shows results
 
 # How to run this project
 
