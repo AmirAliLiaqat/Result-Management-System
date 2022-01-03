@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background: rgb(172, 154, 154)!important;
+}
+/* section{
+  overflow: hidden;
+} */
+.navbar{
+  padding: 0!important;
+}
+.navbar-brand img{
+  width: 100px;
+  height: 70px;
+}
+.navbar .container .collapse ul li a:hover{
+  color: red;
+}
+.links{
+  background: #ccc;
+  padding: 25px;
+}
+.links ul li a{
+  margin: 5px;
+  border: 1px solid #fff;
+}
+.main-content h1{
+  font-size: 70px;
+  font-weight: 700;
+  text-shadow: 2px 2px #000 !important;
+  color: rgb(19, 169, 228);
+}
+.form-content{
+  width: 100%;
+  padding: 20px;
+  background: #ccc;
+  border-radius: 15px;
+}
+.user-porfile{
+  position: relative;
+  width: 170px;
+  cursor: pointer;
+}
+.user-porfile:hover .user-setting{
+  display: block;
+}
+.user-setting{
+  position: absolute;
+  background: #fff;
+  display: none;
+}
+.user-setting ul{
+  padding: 0!important;
+  margin-bottom: 0!important;
+}
+.user-setting ul li{
+  list-style: none;
+  padding: 5px 10px;
+}
+.user-setting ul li:hover{
+  background: #000;
+}
+.user-setting ul li a{
+  text-decoration: none;
+  color: #000;
+  padding-left: 10px;
+}
+.user-setting ul li a:hover{
+  color: #fff!important;
+}
+.col-md-8 .card-header{
+  background: rgb(99, 186, 221);
+  border-radius: 15px 15px 0px 0px!important;
+}
+.card-header h4{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+  display: inline-block;
+  text-shadow: 2px 2px #000 !important;
+  width: 525px;
+  margin-top: 20px;
+}
+.card-header img{
+  width: 180px;
+  height: 150px;
+  margin-top: -60px;
+  padding-bottom: 20px;
+}
+.col-md-6 p{
+  font-weight: bold;
+  font-style: italic;
+}
+thead{
+  background: rgb(99, 186, 221);
+  color: #fff;
+  font-style: italic;
+}
+tbody{
+  font-style: italic;
+}
+.col-md-8 .card-footer{
+  background: rgb(99, 186, 221);
+  border-radius: 0px 0px 15px 15px!important;
+}
+.card-footer p, .card-footer a{
+  text-decoration: none;
+  color: #fff;
+  font-style: italic;
+}
+.card-footer a:hover{
+  color: red;
+}
+.card-group .card:hover{
+  box-shadow: 2px 2px rgb(85, 83, 83) !important;
+}
+.card-group .card img{
+  height: 250px;
+  border-radius: 15px 15px 0px 0px!important;
+  border-bottom: 1px solid #ccc;
+}
+.moreCourses{
+  width: 130px;
+  margin: 0 auto;
+}
+/* .result{
+  display: none;
+} */
+
+/************** Footer CSS ****************/
+footer .col-md-6 ul{
+  flex-direction: row;
+}
+footer .col-md-6 ul li a{
+  margin: 0 10px;
+  color: #fff;
+}
+footer .col-md-6 ul li a:hover{
+  color: red;
+}
+footer .col-md-6 i{
+  font-size: 32px;
+  margin: 0 5px;
+}
