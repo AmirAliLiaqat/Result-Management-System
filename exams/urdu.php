@@ -191,6 +191,7 @@
                                 </ul>
                             </div><!--col-12-->
                         </div><!--row-->
+                        <a href="" class="btn btn-primary w-100">Submit</a>
                         <hr>
                         <div class="row">
                             <div class="col-md-6">
