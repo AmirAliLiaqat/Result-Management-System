@@ -36,7 +36,7 @@
                             </div><!--col-md-6-->
                         </div><!--row-->
                         <hr>
-                        <h4>Tick the correct answer from these fours options...</h4>
+                        <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
                         <div class="row">
                             <div class="col-12">
                                 <h5>Q1. Anam is the smartest _______ girls?</h5>
