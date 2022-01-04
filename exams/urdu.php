@@ -36,6 +36,7 @@
                             </div><!--col-md-6-->
                         </div><!--row-->
                         <hr>
+                        <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
                         <div class="row">
                             <div class="col-12" align="right">
                                 <h5>حضرت مکائیل کا اصل نام کیا ہے؟ Q1.</h5>
