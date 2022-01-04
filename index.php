@@ -64,7 +64,10 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                            <a class="btn btn-danger" href="http://localhost/result-management-system/login/register.php" role="button">Register</a>
+                                <a class="btn btn-danger" href="http://localhost/result-management-system/login/register.php" role="button">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-info" href="http://localhost/result-management-system/login/register.php" role="button">Register</a>
                             </li>
                         </ul>
                         <div class="main-content my-5">
