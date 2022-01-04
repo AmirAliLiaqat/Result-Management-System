@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exams - Result Management System</title>
+    <title>Urdu Papper - Result Management System</title>
     <link rel="shortcut icon" href="../images/logo.png">
     <link rel="stylesheet" href="../css/style.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +18,6 @@
     <!-------------------- Section Start -------------------->
     <section>
         <div class="container my-4">
-            <h3 class="text-center my-5">_________________Select The Papper You Want To Do_________________</h3>
             <div class="row justify-content-center">
                 <div class="col-md-10 p-0" style="background: #ccc; border-radius: 15px;">
                     <div class="card-header">
