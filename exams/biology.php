@@ -26,14 +26,17 @@
                     </div><!--card-header-->
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <p>Name : ______________</p>
                                 <p>Student Id : ______________</p>
                             </div><!--col-md-6-->
-                            <div class="col-md-6 justify-content-end">
+                            <div class="col-md-5 justify-content-end">
                                 <p>Father :  ______________</p>
                                 <p>Class :  _______________</p>
                             </div><!--col-md-6-->
+                            <div class="col-md-2">
+                                <div id="app"></div>
+                            </div>
                         </div><!--row-->
                         <hr>
                         <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>

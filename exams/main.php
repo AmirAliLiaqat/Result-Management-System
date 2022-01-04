@@ -18,7 +18,6 @@
     <!-------------------- Section Start -------------------->
     <section>
         <div class="container my-4">
-        <div id="app"></div>
             <h1 class="text-center my-5">Select The Papper You Want To Do</h1>
             <div class="card-group my-4">
                 <div class="card border-primary mx-2" style="border-radius: 15px;">
