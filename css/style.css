@@ -72,7 +72,7 @@ body{
 .user-setting ul li a:hover{
   color: #fff!important;
 }
-.col-md-8 .card-header{
+.col-md-10 .card-header{
   background: rgb(99, 186, 221);
   border-radius: 15px 15px 0px 0px!important;
 }
@@ -106,7 +106,7 @@ thead{
 tbody{
   font-style: italic;
 }
-.col-md-8 .card-footer{
+.col-md-10 .card-footer{
   background: rgb(99, 186, 221);
   border-radius: 0px 0px 15px 15px!important;
 }
@@ -133,6 +133,9 @@ tbody{
 /* .result{
   display: none;
 } */
+input[type=radio] {
+  right: 0;
+}
 
 /************** Footer CSS ****************/
 footer .col-md-6 ul{
