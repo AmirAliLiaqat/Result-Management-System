@@ -9,6 +9,16 @@
         $password = $_POST['password'];
         $cpassword = $_POST['cpassword'];
 
+        $checkEmail = "SELECT * FROM `student-accounts` WHERE email = '$email'";
+        $query = mysqli_query($conn, $checkEmail) or die("Query Failed");
+
+
+        if(strlen($firstName) > 3 && strlen($lastName) < 20) {
+           echo "Strong String";
+       
+        } else {
+            echo $strlength = 1;
+        }
     }
 ?>
 <!DOCTYPE html>
@@ -36,7 +46,7 @@
                         <span>Length must be between 3 characters and 20 characters.</span>
                     </div><!--col-md-6-->
                     <div class="col-md-6">
-                        <input type="text" name="fname" class="form-control" value="" pattern=".{3,20}" title="3 characters minimum" required>
+                        <input type="text" name="fname" class="form-control" value="" required>
                     </div><!--col-md-6-->
                 </div><!--row-->
                 <div class="row px-3 py-2">
@@ -45,7 +55,7 @@
                         <span>Length must be between 3 characters and 20 characters.</span>
                     </div><!--col-md-6-->
                     <div class="col-md-6">
-                        <input type="text" name="lname" class="form-control" value="" pattern=".{3,20}" title="3 characters minimum" required>
+                        <input type="text" name="lname" class="form-control" value="" required>
                     </div><!--col-md-6-->
                 </div><!--row-->
                 <div class="row px-3 py-2">
