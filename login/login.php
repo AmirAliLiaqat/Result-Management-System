@@ -5,11 +5,10 @@
     session_start();
 
     if(isset($_POST['login'])) {
-        $first_name = mysqli_real_escape_string($conn, $_POST['fname']);
-        $email = mysqli_real_escape_string($conn, $_POST['email']);
-        $password = mysqli_real_escape_string($conn, md5($_POST["password"]));
+        $email = $_POST['email'];
+        $password = md5($_POST["password"]);
 
-        $check_email = mysqli_query($conn, "SELECT * FROM `student-accounts` WHERE email = '$email' AND password = '$password' AND first_name = '$first_name'");
+        $check_email = mysqli_query($conn, "SELECT * FROM `student-accounts` WHERE email = '$email' AND password = '$password'");
 
         if(mysqli_num_rows($check_email) > 0) {
             $row = mysqli_fetch_assoc($check_email);
@@ -55,10 +54,8 @@
                 <div class="col-md-6 form-content">   
                 <h1 class="text-center">Login</h1>
                         <form action="" method="post">
-                            <label for="fname" class="form-label pt-2"><b>First Name :</b></label>
-                            <input type="text" name="fname" class="form-control" placeholder="e.g my@gmail.com" value="" autofill="off" required>
                             <label for="email" class="form-label pt-2"><b>Email :</b></label>
-                            <input type="text" name="email" class="form-control" placeholder="e.g my@gmail.com" value="" autofill="off" required>
+                            <input type="text" name="email" class="form-control" placeholder="e.g my@gmail.com" value="" required>
                             <label for="password" class="form-label pt-2"><b>Password :</b></label>
                             <input type="password" name="password" class="form-control" placeholder="e.g 0123456789" value="" required>
                             <p align="right" class="mt-2"><a href="">Forgot Password</a></p>
