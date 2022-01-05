@@ -20,19 +20,43 @@
                         VALUES ('$firstName','$lastName','$email', md5('$password'))";
                         $result = mysqli_query($conn, $sql) or die("Query Failed");
 
-                        echo "Data Inserted Successfully";
+                        echo " <div class='row'>
+                            <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                                <strong>Data Inserted Successfully...</strong>.
+                                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                            </div>
+                        </div>";
                     } else {
-                        echo "Password does not matched";
+                        echo " <div class='row'>
+                            <div div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                <strong>Password does't match...</strong>.
+                                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                            </div>
+                        </div>";
                     }
                 } else {
-                    echo "Password must be at least greater to 8 character less to 20 character";
+                    echo " <div class='row'>
+                        <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+                            <strong>Password must be between 8 characters and 20 characters...</strong>.
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>
+                    </div>";
                 }
            } else {
-               echo "Email already exist in our database";
+            echo " <div class='row'>
+                <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email already exists in our database...</strong>.
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>
+            </div>";
            } 
         } else {
-            // echo $strlength = 1;
-            echo "Name must be at least greater to 3 character less to 20 character";
+            echo " <div class='row'>
+                <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+                    <strong>Name must be between 3 characters and 20 characters...</strong>.
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>
+            </div>";
         }
     }
 ?>

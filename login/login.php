@@ -16,8 +16,19 @@
             $_SESSION["user_id"] = $row['id'];
             // $_SESSION['full_name'] = $row['first_name'];
             header("Location: welcome.php");
+            echo " <div class='row'>
+                <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                    <strong>Login Successfully...</strong>.
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>
+            </div>";
         } else {
-            echo "<script>alert('Login details is incorrect. Please try again...');</script>";
+            echo " <div class='row'>
+                <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Login details is incorrect. Please try again...</strong>.
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>
+            </div>";
         }
     }
 
