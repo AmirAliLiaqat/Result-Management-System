@@ -19,6 +19,7 @@
         $password = 0;
         $cpassword = 0;
         $login = 0;
+        $strlength = 0;
 
         if($success) {
             echo " <div class='row'>
@@ -64,6 +65,14 @@
             echo " <div class='row'>
                 <div class='alert alert-success alert-dismissible fade show' role='alert'>
                     <strong>Login Successfully...</strong>.
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>
+            </div>";
+        }
+        if($strlength) {
+            echo " <div class='row'>
+                <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                    <strong>Name must be between 3 characters and 20 characters...</strong>.
                     <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                 </div>
             </div>";
