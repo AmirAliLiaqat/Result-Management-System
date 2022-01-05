@@ -19,6 +19,7 @@
         $password = 0;
         $cpassword = 0;
         $login = 0;
+        $logindetails = 0;
         $strlength = 0;
 
         if($success) {
@@ -65,6 +66,14 @@
             echo " <div class='row'>
                 <div class='alert alert-success alert-dismissible fade show' role='alert'>
                     <strong>Login Successfully...</strong>.
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>
+            </div>";
+        }
+        if($logindetails) {
+            echo " <div class='row'>
+                <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                    <strong>Login details is incorrect. Please try again...</strong>.
                     <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                 </div>
             </div>";
