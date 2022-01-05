@@ -1,8 +1,3 @@
-<?php 
-    // require 'conn.php'; 
-    // require 'messages.php'; 
-    // require 'methods.php'; 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,67 +36,25 @@
                                 <th>Edit</th>
                             </tr>
                         </thead>
+                        <?php
+                            require 'conn.php';
+
+                            $sql = "SELECT * FROM `student-accounts`";
+                            $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
+
+                            if(mysqli_num_rows($query) > 0) {
+                                while($row = mysqli_fetch_assoc($query)) {
+                        ?>
                         <tbody>
                             <tr class = "text-center">
-                                <td>1-</td>
-                                <td>Amir</td>
-                                <td>Ali</td>
-                                <td>amirliaqat2020@gmail.com</td>
-                                <td>amirliaqat2020</td>
+                                <td> <?php echo $row['id']; ?> </td>
+                                <td> <?php echo $row['first_name']; ?> </td>
+                                <td> <?php echo $row['last_name']; ?> </td>
+                                <td> <?php echo $row['email']; ?> </td>
+                                <td> <?php echo $row['password']; ?> </td>
                                 <td>
                                     <button class="btn btn-danger">
-                                        <a href="delete.php" class="text-white" style="text-decoration:none;">Delete</a>
-                                    </button>
-                                </td>
-                                <td>
-                                    <button class="btn btn-primary">
-                                        <a href="edit.php" class="text-white" style="text-decoration:none;">Edit</a>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr class = "text-center">
-                                <td>1-</td>
-                                <td>Amir</td>
-                                <td>Ali</td>
-                                <td>amirliaqat2020@gmail.com</td>
-                                <td>amirliaqat2020</td>
-                                <td>
-                                    <button class="btn btn-danger">
-                                        <a href="delete.php" class="text-white" style="text-decoration:none;">Delete</a>
-                                    </button>
-                                </td>
-                                <td>
-                                    <button class="btn btn-primary">
-                                        <a href="edit.php?id=<?php echo $row['id']; ?>" class="text-white" style="text-decoration:none;">Edit</a>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr class = "text-center">
-                                <td>1-</td>
-                                <td>Amir</td>
-                                <td>Ali</td>
-                                <td>amirliaqat2020@gmail.com</td>
-                                <td>amirliaqat2020</td>
-                                <td>
-                                    <button class="btn btn-danger">
-                                        <a href="delete.php" class="text-white" style="text-decoration:none;">Delete</a>
-                                    </button>
-                                </td>
-                                <td>
-                                    <button class="btn btn-primary">
-                                        <a href="edit.php?id=<?php echo $row['id']; ?>" class="text-white" style="text-decoration:none;">Edit</a>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr class = "text-center">
-                                <td>1-</td>
-                                <td>Amir</td>
-                                <td>Ali</td>
-                                <td>amirliaqat2020@gmail.com</td>
-                                <td>amirliaqat2020</td>
-                                <td>
-                                    <button class="btn btn-danger">
-                                        <a href="delete.php" class="text-white" style="text-decoration:none;">Delete</a>
+                                        <a href="delete.php?id=<?php echo $row['id']; ?>" class="text-white" style="text-decoration:none;">Delete</a>
                                     </button>
                                 </td>
                                 <td>
@@ -111,6 +64,10 @@
                                 </td>
                             </tr>
                         </tbody>
+                        <?php
+                                }
+                            }
+                        ?>
                     </table>
                 </div><!--col-md-12-->
             </div><!--row-->
