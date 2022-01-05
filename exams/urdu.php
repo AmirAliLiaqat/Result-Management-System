@@ -25,184 +25,186 @@
                         <img src="../images/logo.png" alt="">
                     </div><!--card-header-->
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <p>Name : ______________</p>
-                                <p>Student Id : ______________</p>
-                            </div><!--col-md-6-->
-                            <div class="col-md-5 justify-content-end">
-                                <p>Father :  ______________</p>
-                                <p>Class :  _______________</p>
-                            </div><!--col-md-6-->
-                            <div class="col-md-2">
-                                <div id="app"></div>
-                            </div>
-                        </div><!--row-->
-                        <hr>
-                        <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
-                        <div class="row">
-                            <div class="col-12" align="right">
-                                <h5>حضرت مکائیل کا اصل نام کیا ہے؟ Q1.</h5>
-                                <ul class="question-1"style="list-style:none;">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1"> عبدالرحمن </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2"> عبید اللّہ </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2" class="true">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3"> عبداللّہ </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4"> صبیح اللّہ </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12" align="right">
-                                <h5>الله تعالٰی نے حضرت آدم علیہ السلام کے ساتھ زمین پر بہشت سے بھیڑ بکریوں کے کتنے جوڑے اتارے تھے ؟ Q2.</h5>
-                                <ul class="question-1"style="list-style:none;">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1"> پانچ جوڑے  </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2"> چھ جوڑے </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3"> سارت جوڑے </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4"> آٹھ جوڑے </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4" class="true">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12" align="right">
-                                <h5>حضرت عسیٰ علیہ السلام جب آسمانوں پر اٹھائے گئے تو اس وقت ان کی عمر کیا تھے ؟ Q3.</h5>
-                                <ul class="question-1"style="list-style:none;">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1"> اکتیس برس اور 5 ماہ </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2"> چونتیس برس اور 9 ماہ </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3"> تینتیس بر اور 7 ماہ  </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4"> بتیس برس اور 6 ماہ  </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4" class="true">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12" align="right">
-                                <h5>حضورؐ کے چچا حضرت عباس ؓ کی نماز جنازہ کس نے پڑھائی تھی ؟ Q4.</h5>
-                                <ul class="question-1"style="list-style:none;">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1"> حضرت عمر فاروقؓ </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2"> حضرت ابو بکر ؓ </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3"> حضرت عثمان ؓ </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3" class="true">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4"> حضرت علی </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12" align="right">
-                                <h5>بتائیے کس سورۃ میں حضرت اسرافیل ؑ کے صور کی کیفیت بتائی گئی ہے ______؟ Q5.</h5>
-                                <ul class="question-1"style="list-style:none;">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1"> المزمل  </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2"> سورۃ المدثر </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3"> سورۃ النور </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4"> سورۃ المومنون </label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4" class="true">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <a href="" class="btn btn-primary w-100" name="save">Submit</a>
+                       <form action="" method="post">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <p>Name : <input type="text" name="name" id="" class="form-control"></p>
+                                    <p>Student Id : <input type="stuId" name="name" id="" class="form-control"></p>
+                                </div><!--col-md-6-->
+                                <div class="col-md-5 justify-content-end">
+                                    <p>Father : <input type="father" name="name" id="" class="form-control"></p>
+                                    <p>Class : <input type="class" name="name" id="" class="form-control"></p>
+                                </div><!--col-md-6-->
+                                <div class="col-md-2">
+                                    <div id="app" class="my-4"></div>
+                                </div>
+                            </div><!--row-->
+                            <hr>
+                            <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
+                            <div class="row">
+                                <div class="col-12" align="right">
+                                    <h5>حضرت مکائیل کا اصل نام کیا ہے؟ Q1.</h5>
+                                    <ul class="question-1"style="list-style:none;">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1"> عبدالرحمن </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2"> عبید اللّہ </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2" class="true">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3"> عبداللّہ </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4"> صبیح اللّہ </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12" align="right">
+                                    <h5>الله تعالٰی نے حضرت آدم علیہ السلام کے ساتھ زمین پر بہشت سے بھیڑ بکریوں کے کتنے جوڑے اتارے تھے ؟ Q2.</h5>
+                                    <ul class="question-1"style="list-style:none;">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1"> پانچ جوڑے  </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2"> چھ جوڑے </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3"> سارت جوڑے </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4"> آٹھ جوڑے </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4" class="true">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12" align="right">
+                                    <h5>حضرت عسیٰ علیہ السلام جب آسمانوں پر اٹھائے گئے تو اس وقت ان کی عمر کیا تھے ؟ Q3.</h5>
+                                    <ul class="question-1"style="list-style:none;">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1"> اکتیس برس اور 5 ماہ </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2"> چونتیس برس اور 9 ماہ </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3"> تینتیس بر اور 7 ماہ  </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4"> بتیس برس اور 6 ماہ  </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4" class="true">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12" align="right">
+                                    <h5>حضورؐ کے چچا حضرت عباس ؓ کی نماز جنازہ کس نے پڑھائی تھی ؟ Q4.</h5>
+                                    <ul class="question-1"style="list-style:none;">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1"> حضرت عمر فاروقؓ </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2"> حضرت ابو بکر ؓ </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3"> حضرت عثمان ؓ </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3" class="true">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4"> حضرت علی </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12" align="right">
+                                    <h5>بتائیے کس سورۃ میں حضرت اسرافیل ؑ کے صور کی کیفیت بتائی گئی ہے ______؟ Q5.</h5>
+                                    <ul class="question-1"style="list-style:none;">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1"> المزمل  </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2"> سورۃ المدثر </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3"> سورۃ النور </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4"> سورۃ المومنون </label>
+                                                <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4" class="true">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <button class="btn btn-primary w-100" name="save">Submit</button>
+                        </form>
                         <hr>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>Teacher Sign :  _________________</p>
+                                <p>Teacher Sign :  <img src="../images/signature.png" style="width: 300px;"></p>
                             </div><!--col-md-6-->
                             <div class="col-md-6">
-                                <p align="right">Principal Sign :  _____________________</p>
+                                <p>Principal Sign :  <img src="../images/signature1.png" style="width: 300px;"></p>
                             </div><!--col-md-6-->
                         </div><!--row-->
                     </div><!--card-body-->

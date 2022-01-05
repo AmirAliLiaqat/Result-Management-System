@@ -25,184 +25,186 @@
                         <img src="../images/logo.png" alt="">
                     </div><!--card-header-->
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <p>Name : ______________</p>
-                                <p>Student Id : ______________</p>
-                            </div><!--col-md-6-->
-                            <div class="col-md-5 justify-content-end">
-                                <p>Father :  ______________</p>
-                                <p>Class :  _______________</p>
-                            </div><!--col-md-6-->
-                            <div class="col-md-2">
-                                <div id="app"></div>
-                            </div>
-                        </div><!--row-->
-                        <hr>
-                        <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q1. The soul of chemistry is dealing with___________?</h5>
-                                <ul class="question-1" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">Internal structural changes in matter</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">Composition of matter</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">Properties of matter</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">Composition and properties of matter</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q2. The radioactive isotope of hydrogen is called___________?</h5>
-                                <ul class="question-2" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">tritium</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">deuterium</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">protium</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">ortho-hydrogen</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q3. Electron was discovered by?</h5>
-                                <ul class="question-3" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">Michael Faraday</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">James Maxwell</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">Yuri Gagarin</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">J.J Thomson</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q4. Which of the following is a substance?</h5>
-                                <ul class="question-4" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">Sea water</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">Brass</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">Tape water</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">Graphite</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q5. What is a mixture of Potassium Nitrate Powdered Charcoal and Sulphur called?</h5>
-                                <ul class="question-5" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">Paint</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">Glass</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">Gun Powder</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">Cement</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <a href="" class="btn btn-primary w-100" name="save">Submit</a>
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <p>Name : <input type="text" name="name" id="" class="form-control"></p>
+                                    <p>Student Id : <input type="stuId" name="name" id="" class="form-control"></p>
+                                </div><!--col-md-6-->
+                                <div class="col-md-5 justify-content-end">
+                                    <p>Father : <input type="father" name="name" id="" class="form-control"></p>
+                                    <p>Class : <input type="class" name="name" id="" class="form-control"></p>
+                                </div><!--col-md-6-->
+                                <div class="col-md-2">
+                                    <div id="app" class="my-4"></div>
+                                </div>
+                            </div><!--row-->
+                            <hr>
+                            <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q1. The soul of chemistry is dealing with___________?</h5>
+                                    <ul class="question-1" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">Internal structural changes in matter</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">Composition of matter</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">Properties of matter</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">Composition and properties of matter</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q2. The radioactive isotope of hydrogen is called___________?</h5>
+                                    <ul class="question-2" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">tritium</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">deuterium</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">protium</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">ortho-hydrogen</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q3. Electron was discovered by?</h5>
+                                    <ul class="question-3" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">Michael Faraday</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">James Maxwell</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">Yuri Gagarin</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">J.J Thomson</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q4. Which of the following is a substance?</h5>
+                                    <ul class="question-4" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">Sea water</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">Brass</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">Tape water</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">Graphite</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q5. What is a mixture of Potassium Nitrate Powdered Charcoal and Sulphur called?</h5>
+                                    <ul class="question-5" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">Paint</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">Glass</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">Gun Powder</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">Cement</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <button class="btn btn-primary w-100" name="save">Submit</button>
+                        </form>
                         <hr>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>Teacher Sign :  _________________</p>
+                                <p>Teacher Sign :  <img src="../images/signature.png" style="width: 300px;"></p>
                             </div><!--col-md-6-->
                             <div class="col-md-6">
-                                <p align="right">Principal Sign :  _____________________</p>
+                                <p>Principal Sign :  <img src="../images/signature1.png" style="width: 300px;"></p>
                             </div><!--col-md-6-->
                         </div><!--row-->
                     </div><!--card-body-->

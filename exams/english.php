@@ -25,184 +25,186 @@
                         <img src="../images/logo.png" alt="">
                     </div><!--card-header-->
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <p>Name : ______________</p>
-                                <p>Student Id : ______________</p>
-                            </div><!--col-md-6-->
-                            <div class="col-md-5 justify-content-end">
-                                <p>Father :  ______________</p>
-                                <p>Class :  _______________</p>
-                            </div><!--col-md-6-->
-                            <div class="col-md-2">
-                                <div id="app"></div>
-                            </div>
-                        </div><!--row-->
-                        <hr>
-                        <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q1. Anam is the smartest _______ girls?</h5>
-                                <ul class="question-1" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">among others</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">of all others</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">of all</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">of</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q2. Identify the correct Spellings:</h5>
-                                <ul class="question-1" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">Metropolitan</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">Metropoleton</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">Metropulitan</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4"> None of these</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q3. Antonym of “RAUCOUS” is _________?</h5>
-                                <ul class="question-1" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">Hoarse</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">Subdued</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">Strident</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">None of these</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q4. “A PIPE DREAM” means ?</h5>
-                                <ul class="question-1" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">A pleasant dream</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">A bad dream</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">An impracticable plan</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">None of these</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q5. She has been exempted ______ night duty.</h5>
-                                <ul class="question-1" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">with</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">for</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">from</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">None of these</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <a href="" class="btn btn-primary w-100" name="save">Submit</a>
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <p>Name : <input type="text" name="name" id="" class="form-control"></p>
+                                    <p>Student Id : <input type="stuId" name="name" id="" class="form-control"></p>
+                                </div><!--col-md-6-->
+                                <div class="col-md-5 justify-content-end">
+                                    <p>Father : <input type="father" name="name" id="" class="form-control"></p>
+                                    <p>Class : <input type="class" name="name" id="" class="form-control"></p>
+                                </div><!--col-md-6-->
+                                <div class="col-md-2">
+                                    <div id="app" class="my-4"></div>
+                                </div>
+                            </div><!--row-->
+                            <hr>
+                            <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q1. Anam is the smartest _______ girls?</h5>
+                                    <ul class="question-1" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">among others</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">of all others</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">of all</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">of</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q2. Identify the correct Spellings:</h5>
+                                    <ul class="question-1" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">Metropolitan</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">Metropoleton</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">Metropulitan</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4"> None of these</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q3. Antonym of “RAUCOUS” is _________?</h5>
+                                    <ul class="question-1" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">Hoarse</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">Subdued</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">Strident</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">None of these</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q4. “A PIPE DREAM” means ?</h5>
+                                    <ul class="question-1" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">A pleasant dream</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">A bad dream</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">An impracticable plan</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">None of these</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q5. She has been exempted ______ night duty.</h5>
+                                    <ul class="question-1" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">with</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">for</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">from</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">None of these</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <button class="btn btn-primary w-100" name="save">Submit</button>
+                        </form>
                         <hr>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>Teacher Sign :  _________________</p>
+                                <p>Teacher Sign :  <img src="../images/signature.png" style="width: 300px;"></p>
                             </div><!--col-md-6-->
                             <div class="col-md-6">
-                                <p align="right">Principal Sign :  _____________________</p>
+                                <p>Principal Sign :  <img src="../images/signature1.png" style="width: 300px;"></p>
                             </div><!--col-md-6-->
                         </div><!--row-->
                     </div><!--card-body-->

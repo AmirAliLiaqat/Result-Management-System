@@ -25,184 +25,186 @@
                         <img src="../images/logo.png" alt="">
                     </div><!--card-header-->
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <p>Name : ______________</p>
-                                <p>Student Id : ______________</p>
-                            </div><!--col-md-6-->
-                            <div class="col-md-5 justify-content-end">
-                                <p>Father :  ______________</p>
-                                <p>Class :  _______________</p>
-                            </div><!--col-md-6-->
-                            <div class="col-md-2">
-                                <div id="app"></div>
-                            </div>
-                        </div><!--row-->
-                        <hr>
-                        <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q1. Which Muslim scientist wrote first book on Algebra ?</h5>
-                                <ul class="question-1" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">Al-Khwarizmi</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">Ibn Sina</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">Archimedes</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">Euclid</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q2. What’s the largest known Prime Number?</h5>
-                                <ul class="question-2" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">282,589,933 − 3</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">282,589,933 − 1</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">282,589,933 − 5</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4"> None of these</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q3. Find two number whose sum is 28 and the difference is 4 _____________?</h5>
-                                <ul class="question-3" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">12,16</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">18,10</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">15,13</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">14,12</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q4. acre is equal to ________square foot?</h5>
-                                <ul class="question-4" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">45434 square foot</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">34343 square foot</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">43572 square foot</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">43560 square foot </label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Q5. The word Geometry has been derived from two Greek words:_____________?</h5>
-                                <ul class="question-5" style="list-style:none; padding:0">
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios1">Geo means Earth</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios2">Metron means Measurement.</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios3">Hence Geomatery means</label>
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleRadios4">Earth measurement</label>
-                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div><!--col-12-->
-                        </div><!--row-->
-                        <a href="" class="btn btn-primary w-100" name="save">Submit</a>
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <p>Name : <input type="text" name="name" id="" class="form-control"></p>
+                                    <p>Student Id : <input type="stuId" name="name" id="" class="form-control"></p>
+                                </div><!--col-md-6-->
+                                <div class="col-md-5 justify-content-end">
+                                    <p>Father : <input type="father" name="name" id="" class="form-control"></p>
+                                    <p>Class : <input type="class" name="name" id="" class="form-control"></p>
+                                </div><!--col-md-6-->
+                                <div class="col-md-2">
+                                    <div id="app" class="my-4"></div>
+                                </div>
+                            </div><!--row-->
+                            <hr>
+                            <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q1. Which Muslim scientist wrote first book on Algebra ?</h5>
+                                    <ul class="question-1" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">Al-Khwarizmi</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">Ibn Sina</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">Archimedes</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">Euclid</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q2. What’s the largest known Prime Number?</h5>
+                                    <ul class="question-2" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">282,589,933 − 3</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">282,589,933 − 1</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">282,589,933 − 5</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4"> None of these</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q3. Find two number whose sum is 28 and the difference is 4 _____________?</h5>
+                                    <ul class="question-3" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">12,16</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">18,10</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">15,13</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">14,12</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q4. acre is equal to ________square foot?</h5>
+                                    <ul class="question-4" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">45434 square foot</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">34343 square foot</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">43572 square foot</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">43560 square foot </label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Q5. The word Geometry has been derived from two Greek words:_____________?</h5>
+                                    <ul class="question-5" style="list-style:none; padding:0">
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios1">Geo means Earth</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios2">Metron means Measurement.</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios3">Hence Geomatery means</label>
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="exampleRadios4">Earth measurement</label>
+                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--col-12-->
+                            </div><!--row-->
+                            <button class="btn btn-primary w-100" name="save">Submit</button>
+                        </form>
                         <hr>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>Teacher Sign :  _________________</p>
+                                <p>Teacher Sign :  <img src="../images/signature.png" style="width: 300px;"></p>
                             </div><!--col-md-6-->
                             <div class="col-md-6">
-                                <p align="right">Principal Sign :  _____________________</p>
+                                <p>Principal Sign :  <img src="../images/signature1.png" style="width: 300px;"></p>
                             </div><!--col-md-6-->
                         </div><!--row-->
                     </div><!--card-body-->
