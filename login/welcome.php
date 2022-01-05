@@ -41,6 +41,7 @@
                     <div class="user-porfile text-white" style="font-size:18px;">
                         <i class="fas fa-user-circle"></i>
                         Hello,
+                        <!-- <?php echo $_SESSION['id']; ?> -->
                         <div class="user-setting">
                             <ul>
                                 <li><a href="#">View Profile</a></li>
@@ -68,17 +69,19 @@
                         <img src="../images/logo.png" alt="">
                     </div><!--card-header-->
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>Name : ______________</p>
-                                <p>Student Id : ______________</p>
-                                <p>Grade : ______________</p>
-                            </div><!--col-md-6-->
-                            <div class="col-md-6 justify-content-end">
-                                <p>Father :  ______________</p>
-                                <p>Class :  _______________</p>
-                                <p>Year : ________________</p>
-                            </div><!--col-md-6-->
+                        <div class="row" style="font-weight:bold; font-style:italic">
+                            <div class="col-md-4">
+                                <p>Student Id : <input type="text" name="name" id="" class="form-control"></p>
+                                <p>Class : <input type="stuId" name="name" id="" class="form-control"></p>
+                            </div><!--col-md-4-->
+                            <div class="col-md-4 justify-content-end">
+                                <p>Name : <input type="father" name="name" id="" class="form-control"></p>
+                                <p>Grade : <input type="class" name="name" id="" class="form-control"></p>
+                            </div><!--col-md-4-->
+                            <div class="col-md-4 justify-content-end">
+                                <p>Father : <input type="father" name="name" id="" class="form-control"></p>
+                                <p>Year : <input type="class" name="name" id="" class="form-control"></p>
+                            </div><!--col-md-4-->
                         </div><!--row-->
                         <div class="row">
                             <table class="table table-hover table-striped table-bordered">
@@ -164,11 +167,13 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div><!--row-->
+                        <div class="row">
                             <div class="col-md-6">
-                                <p>Teacher Sign :  _________________</p>
+                                <p align="center">Teacher Sign :  <img src="../images/signature.png" style="width: 300px;"></p>
                             </div><!--col-md-6-->
                             <div class="col-md-6">
-                                <p align="right">Principal Sign :  _____________________</p>
+                                <p align="center">Principal Sign :  <img src="../images/signature1.png" style="width: 300px;"></p>
                             </div><!--col-md-6-->
                         </div><!--row-->
                     </div><!--card-body-->
