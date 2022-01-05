@@ -1,3 +1,7 @@
+<?php
+    require 'conn.php';
+    require 'messages.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

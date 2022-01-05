@@ -72,7 +72,7 @@ body{
 .user-setting ul li a:hover{
   color: #fff!important;
 }
-.col-md-10 .card-header{
+.col-md-10 .card-header, .col-md-8 .card-header{
   background: rgb(99, 186, 221);
   border-radius: 15px 15px 0px 0px!important;
 }
@@ -110,7 +110,7 @@ thead{
 tbody{
   font-style: italic;
 }
-.col-md-10 .card-footer{
+.col-md-10 .card-footer, .col-md-8 .card-footer{
   background: rgb(99, 186, 221);
   border-radius: 0px 0px 15px 15px!important;
 }
