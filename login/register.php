@@ -1,6 +1,15 @@
 <?php
     require 'conn.php';
     require 'messages.php';
+
+    if(isset($_POST['save'])) {
+        $firstName = $_POST['fname'];
+        $lastName = $_POST['lname'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $cpassword = $_POST['cpassword'];
+
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
