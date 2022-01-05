@@ -12,12 +12,27 @@
         $checkEmail = "SELECT * FROM `student-accounts` WHERE email = '$email'";
         $query = mysqli_query($conn, $checkEmail) or die("Query Failed");
 
+        if(strlen($firstName) >= 3 && strlen($firstName) < 20 && strlen($lastName) >= 3 && strlen($lastName) < 20) {
+           if($query->num_rows >= 0) {
+                if(strlen($password) > 8 && strlen($password) < 20) {
+                    if($password === $cpassword) {
+                        $sql = "INSERT INTO `student-accounts`(`first_name`, `last_name`, `email`, `password`) 
+                        VALUES ('$firstName','$lastName','$email', md5('$password'))";
+                        $result = mysqli_query($conn, $sql) or die("Query Failed");
 
-        if(strlen($firstName) > 3 && strlen($lastName) < 20) {
-           echo "Strong String";
-       
+                        echo "Data Inserted Successfully";
+                    } else {
+                        echo "Password does not matched";
+                    }
+                } else {
+                    echo "Password must be at least greater to 8 character leas to 20 character";
+                }
+           } else {
+               echo "Email already exist in our database";
+           } 
         } else {
-            echo $strlength = 1;
+            // echo $strlength = 1;
+            echo "Not strong string";
         }
     }
 ?>
