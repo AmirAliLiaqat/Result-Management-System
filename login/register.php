@@ -13,7 +13,7 @@
         $query = mysqli_query($conn, $checkEmail) or die("Query Failed");
 
         if(strlen($firstName) >= 3 && strlen($firstName) < 20 && strlen($lastName) >= 3 && strlen($lastName) < 20) {
-           if($query->num_rows >= 0) {
+           if(!mysqli_num_rows($query) > 0) {
                 if(strlen($password) > 8 && strlen($password) < 20) {
                     if($password === $cpassword) {
                         $sql = "INSERT INTO `student-accounts`(`first_name`, `last_name`, `email`, `password`) 
@@ -25,14 +25,14 @@
                         echo "Password does not matched";
                     }
                 } else {
-                    echo "Password must be at least greater to 8 character leas to 20 character";
+                    echo "Password must be at least greater to 8 character less to 20 character";
                 }
            } else {
                echo "Email already exist in our database";
            } 
         } else {
             // echo $strlength = 1;
-            echo "Not strong string";
+            echo "Name must be at least greater to 3 character less to 20 character";
         }
     }
 ?>
