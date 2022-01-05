@@ -28,12 +28,6 @@
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-google"></i>
                     <i class="fab fa-github"></i>
-                    <!-- <img src="images/facebook.png">
-                    <img src="images/twitter.png">
-                    <img src="images/youtube.png">
-                    <img src="images/instagram.png">
-                    <img src="images/google.png">
-                    <img src="images/github.png"> -->
                 </div><!--col-md-6-->
             </div><!--row-->
             <div class="row mt-2">
@@ -48,10 +42,8 @@
     </footer>
     <!-------------------- Footer End -------------------->
 
-    <!-------------------- Custom Js -------------------->
-    <script src="js/script.js"></script>
-
     <!-------------------- Bootstrap Js -------------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    
+    <!-------------------- Custom Js -------------------->
+    <script src="js/script.js"></script>
