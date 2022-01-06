@@ -42,6 +42,7 @@
     <link rel="shortcut icon" href="../images/logo.png">
     <link rel="stylesheet" href="../css/style.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 <body>
 
@@ -57,7 +58,8 @@
                             <label for="email" class="form-label pt-2"><b>Email :</b></label>
                             <input type="text" name="email" class="form-control" placeholder="e.g my@gmail.com" value="" required>
                             <label for="password" class="form-label pt-2"><b>Password :</b></label>
-                            <input type="password" name="password" class="form-control" placeholder="e.g 0123456789" value="" required>
+                            <input type="password" name="password" id="id_password" class="form-control" value="" required>
+                            <i class="far fa-eye"  id="togglePassword" style="margin-left: 460px; cursor: pointer;"></i>
                             <p align="right" class="mt-2"><a href="">Forgot Password</a></p>
                             <div class="captcha mb-2">
                                 <p>Please check the box below to proceed.</p>
@@ -75,6 +77,8 @@
     </section>
     <!-------------------- Section End -------------------->
     
+    <script src="script.js"></script>
+
     <?php include '../footer.php'; ?>
 
 </body>

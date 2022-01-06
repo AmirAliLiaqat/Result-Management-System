@@ -70,6 +70,7 @@
     <link rel="shortcut icon" href="../images/logo.png">
     <link rel="stylesheet" href="../css/style.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 <body>
 
@@ -112,7 +113,8 @@
                         <span>Length must be between 8 characters and 20 characters.</span>
                     </div><!--col-md-6-->
                     <div class="col-md-6">
-                        <input type="password" name="password" class="form-control" value="" required>
+                        <input type="password" name="password" id="id_password" class="form-control" value="" required>
+                        <i class="far fa-eye"  id="togglePassword" style="margin-left: 510px; cursor: pointer;"></i>
                     </div><!--col-md-6-->
                 </div><!--row-->
                 <div class="row px-3 py-2">
@@ -121,7 +123,8 @@
                         <span>Length must be between 8 characters and 20 characters.</span>
                     </div><!--col-md-6-->
                     <div class="col-md-6">
-                        <input type="password" name="cpassword" class="form-control" value="" required>
+                        <input type="password" name="cpassword" id="id_cpassword" class="form-control" value="" required>
+                        <i class="far fa-eye"  id="toggleCpassword" style="margin-left: 510px; cursor: pointer;"></i>
                     </div><!--col-md-6-->
                     <p class=" pt-4">
                         Already have an account ?
@@ -133,7 +136,9 @@
         </div><!--container-->
     </section>
     <!-------------------- Section End -------------------->
-    
+
+    <script src="script.js"></script>
+
     <?php include '../footer.php'; ?>
 
 </body>
