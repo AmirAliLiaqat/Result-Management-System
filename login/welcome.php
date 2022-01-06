@@ -59,9 +59,6 @@
     <!-------------------- Section Start -------------------->
     <section>
        <div class="container my-5">
-            <button class="btn btn-primary text-center download">
-                <a href="" class="text-decoration-none text-white">Download</a>
-            </button>
             <div class="row justify-content-center">
                 <div class="col-md-8 p-0" style="background: #ccc; border-radius: 15px;">
                     <div class="card-header">

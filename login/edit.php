@@ -65,7 +65,7 @@
                         <label for="fname" class="form-label"><b>First Name :</b></label>
                     </div><!--col-md-6-->
                     <div class="col-md-6">
-                        <input type="text" name="id" class="form-control" value="<?php echo $row['id']; ?>" required>
+                        <input type="hidden" name="id" class="form-control" value="<?php echo $row['id']; ?>" required>
                         <input type="text" name="fname" class="form-control" value="<?php echo $row['first_name']; ?>" required>
                     </div><!--col-md-6-->
                 </div><!--row-->
