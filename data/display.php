@@ -17,7 +17,7 @@
     <section>
         <div class="container-fluid py-3">
             <div class="row bg-white py-3">
-                <h1 class="text-center text-primary">Students Result</h1>  
+                <h1 class="text-center text-primary" style="text-transform:uppercase; text-shadow: 2px 2px #000 !important; font-weight:bold">Students Result</h1>  
                 <div class="col-md-12">
                     <table class="table table-bordered table-hover table-striped">
                         <thead>
@@ -89,9 +89,6 @@
                     </table>
                     <button class="btn btn-info mx-1" type="submit" name="addNew" style="width:10%;">
                         <a href="http://localhost/result-management-system/data/insert.php" class="text-white" style="text-decoration:none;">Add New</a>
-                    </button>
-                    <button class="btn btn-success mx-1 download" type="submit" name="addNew" style="width:10%;">
-                        <a href="" class="text-white" style="text-decoration:none;">Download</a>
                     </button>
                 </div><!--col-md-12-->
             </div><!--row-->

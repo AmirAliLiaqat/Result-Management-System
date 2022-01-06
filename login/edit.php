@@ -9,25 +9,28 @@
         $password = $_POST['password'];
         $cpassword = $_POST['cpassword'];
 
-        // $checkEmail = "SELECT * FROM `student-accounts` WHERE email = '$email'";
-        // $query = mysqli_query($conn, $checkEmail) or die("Query Failed" . mysqli_connect_error());
-
-        // if(!mysqli_num_rows($query) > 0) {
-            if(strlen($password) > 3 && strlen($password) < 20) {
-                if($password === $cpassword) {
-                    $sql = "UPDATE `student-accounts` SET `first_name` = '$firstName', `last_name` = '$lastName', `email` = '$email', `password` = md5('$password') WHERE id = $id";
-                    mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error($sql));
-                    
-                    header('location: admin.php');
-                } else {
-                    echo "Password does not matched";
-                }
+        if(strlen($password) > 3 && strlen($password) < 20) {
+            if($password === $cpassword) {
+                $sql = "UPDATE `student-accounts` SET `first_name` = '$firstName', `last_name` = '$lastName', `email` = '$email', `password` = md5('$password') WHERE id = $id";
+                mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error($sql));
+                
+                header('location: admin.php');
             } else {
-                echo "Password must be at least greater to 8 character less to 20 character";
+                echo " <div class='row'>
+                    <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Password does't match...</strong>.
+                        <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>
+                </div>";
             }
-        // } else {
-        //     echo "Email already exist in our database";
-        // }
+        } else {
+            echo " <div class='row'>
+                <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+                    <strong>Password must be between 8 characters and 20 characters...</strong>.
+                    <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>
+            </div>";
+        }
     }
 ?>
 <!DOCTYPE html>
