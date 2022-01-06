@@ -1,8 +1,3 @@
-<?php 
-    require 'conn.php'; 
-    require 'messages.php'; 
-    require 'methods.php'; 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +41,11 @@
                                 <th>Grade</th>
                             </tr>
                         </thead>
-                        <?php 
+                        <?php  
+                            require 'conn.php'; 
+                            require 'messages.php'; 
+                            require 'methods.php'; 
+                            
                             $sql = "SELECT * FROM `student-data`";
                             $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
 
