@@ -4,11 +4,12 @@
     require 'methods.php'; 
 
     if(isset($_POST['save'])) {
-        $stuId = $_POST['stuId'];
+        $studentId = $_POST['stuId'];
         $class = $_POST['class'];
         $firstName = $_POST['fname'];
         $lastName = $_POST['lname'];
         $email = $_POST['email'];
+
         $eng = $_POST['eng'];
         $urdu = $_POST['urdu'];
         $maths = $_POST['maths'];
@@ -18,7 +19,7 @@
         $chem = $_POST['chem'];
         $bio = $_POST['bio'];
 
-        $numbers = [$eng, $urdu, $maths, $pakStudy, $isl, $phy, $chem, $bio];
+        $numbers = [$eng,$urdu,$maths,$pakStudy,$isl,$phy,$chem,$bio];
 
         $total = $_POST['total'];
         $obtain = $_POST['obtain'];
@@ -26,20 +27,30 @@
         $grade = $_POST['grade'];
 
         $checkEmail = "SELECT * FROM `student-data` WHERE email = '$email'";
-        $result = mysqli_query($conn, $checkEmail) or die("Query Failed" . mysqli_connect_error());
-       
-        if(is_object($result) && isset($result->num_rows) && $result->num_rows >= 1) {
-            $sql = "INSERT INTO `student-data` (`student_id`,`class`, `first_name`, `last_name`, `email`, `eng`, `urdu`, `maths`, `p.study`, `isl`, `phy`, `chem`, `bio`, `total`, `obtain`, `percentage`, `grade`) 
-            VALUES ('$stuId','$class', '$firstName', '$lastName', '$email', $eng, $urdu, $maths, $pakStudy, $isl, $phy, $chem, $bio, $total, $obtain, $per, '$grade')";
+        $query = mysqli_query($conn, $checkEmail) or die("Query Failed");
 
-            $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
-                
-            $success = 1;
+        if(!mysqli_num_rows($query) > 0) {
+            $sql = "INSERT INTO `student-data`(`student_id`, `class`, `first_name`, `last_name`, `email`, `eng`, `urdu`, `maths`, `p.study`, `isl`, `phy`, `chem`, `bio`, `total`, `obtain`, `percentage`, `grade`) 
+            VALUES ('$studentId','$class','$firstName','$lastName','$email','$eng','$urdu','$maths','$pakStudy','$isl','$phy','$chem','$bio','$total','$obtain','$per','$grade')";
 
-            header('location: http://localhost/result-management-system/');
+            $query = mysqli_query($conn, $sql) or die("Query Failed");
+
+            echo " <div class='row'>
+                <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                    <strong>Data Inserted Successfully...</strong>.
+                    <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>
+            </div>";
         } else {
-            $email = 1;
+            echo " <div class='row'>
+                <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email already exists in our database...</strong>.
+                    <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
+                </div>
+            </div>";
         }
+
+        // echo $checkEmail;
     }
 ?>
 <!DOCTYPE html>
@@ -131,7 +142,7 @@
                                 <input type="number" name="bio" id="" class="form-control" min="0" max="100" required>
                             </div><!--col-md-3-->
                         </div><!--row-->
-                        <div class="row my-2 result">
+                        <div class="row my-2 result d-none">
                             <div class="col-md-3">
                                 <label for="total" class="form-label">Total :</label>
                                 <input type="text" name="total" id="" class="form-control" value="<?php echo totalMarks($numbers); ?>">
