@@ -49,8 +49,6 @@
                 </div>
             </div>";
         }
-
-        // echo $checkEmail;
     }
 ?>
 <!DOCTYPE html>
