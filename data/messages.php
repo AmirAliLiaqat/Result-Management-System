@@ -24,7 +24,7 @@
             echo " <div class='row'>
                 <div class='alert alert-success alert-dismissible fade show' role='alert'>
                     <strong>Data Inserted Successfully...</strong>.
-                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
                 </div>
             </div>";
         }
@@ -32,7 +32,7 @@
             echo " <div class='row'>
                 <div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>Data Can not be Inserted...</strong>.
-                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
                 </div>
             </div>";
         }
@@ -40,7 +40,7 @@
             echo " <div class='row'>
                 <div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>Email already exists in our database...</strong>.
-                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
                 </div>
             </div>";
         }
@@ -48,7 +48,7 @@
             echo " <div class='row'>
                 <div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>Password must be between 8 characters and 20 characters...</strong>.
-                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
                 </div>
             </div>";
         }
@@ -56,7 +56,7 @@
             echo " <div class='row'>
                 <div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>Password does't match...</strong>.
-                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
                 </div>
             </div>";
         }
@@ -64,7 +64,7 @@
             echo " <div class='row'>
                 <div class='alert alert-success alert-dismissible fade show' role='alert'>
                     <strong>Login Successfully...</strong>.
-                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
                 </div>
             </div>";
         }
