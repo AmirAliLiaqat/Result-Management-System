@@ -1,3 +1,22 @@
+<?php
+    require '../data/conn.php';
+    require '../data/messages.php';
+    require '../data/methods.php';
+
+    if(isset($_POST['submit'])) {
+        echo $stuName = $_POST['name']  . "<br>";
+        echo $stuId = $_POST['stuId']  . "<br>";
+        echo $stuFather = $_POST['father']  . "<br>";
+        echo $class = $_POST['class']  . "<br>";
+        
+        echo $answer1 = $_POST['myAnswer1']  . "<br>";
+        echo $answer2 = $_POST['myAnswer2']  . "<br>";
+        echo $answer3 = $_POST['myAnswer3']  . "<br>";
+        echo $answer4 = $_POST['myAnswer4']  . "<br>";
+        echo $answer5 = $_POST['myAnswer5']  . "<br>";
+
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,11 +48,14 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <p>Name : <input type="text" name="name" id="" class="form-control"></p>
-                                    <p>Student Id : <input type="stuId" name="name" id="" class="form-control"></p>
+                                    <p>Student Id : <input type="text" name="stuId" id="" class="form-control"></p>
+                                    <input type="hidden" name="total" id="" class="form-control">
+                                    <input type="hidden" name="obtain" id="" class="form-control">
+                                    <input type="hidden" name="per" id="" class="form-control">
                                 </div><!--col-md-6-->
                                 <div class="col-md-5 justify-content-end">
-                                    <p>Father : <input type="father" name="name" id="" class="form-control"></p>
-                                    <p>Class : <input type="class" name="name" id="" class="form-control"></p>
+                                    <p>Father : <input type="text" name="father" id="" class="form-control"></p>
+                                    <p>Class : <input type="text" name="class" id="" class="form-control"></p>
                                 </div><!--col-md-6-->
                                 <div class="col-md-2">
                                     <div id="app" class="my-4"></div>
@@ -48,25 +70,25 @@
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios1">among others</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios2">of all others</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios3">of all</label>
-                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                                <input class="form-check-input true" type="checkbox" name="myAnswer1" id="exampleRadios3" value="option3">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios4">of</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option4">
                                             </div>
                                         </li>
                                     </ul>
@@ -79,25 +101,25 @@
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios1">Metropolitan</label>
-                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                <input class="form-check-input true" type="checkbox" name="myAnswer2" id="exampleRadios1" value="option1">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios2">Metropoleton</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios3">Metropulitan</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios4"> None of these</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option4">
                                             </div>
                                         </li>
                                     </ul>
@@ -110,25 +132,25 @@
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios1">Hoarse</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios2">Subdued</label>
-                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                <input class="form-check-input true" type="checkbox" name="myAnswer3" id="exampleRadios2" value="option2">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios3">Strident</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios4">None of these</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option4">
                                             </div>
                                         </li>
                                     </ul>
@@ -141,25 +163,25 @@
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios1">A pleasant dream</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios2">A bad dream</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios3">An impracticable plan</label>
-                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                                <input class="form-check-input true" type="checkbox" name="myAnswer4" id="exampleRadios3" value="option3">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios4">None of these</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option4">
                                             </div>
                                         </li>
                                     </ul>
@@ -172,31 +194,31 @@
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios1">with</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios2">for</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios3">from</label>
-                                                <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                                <input class="form-check-input true" type="checkbox" name="myAnswer5" id="exampleRadios3" value="option3">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
                                                 <label class="form-check-label" for="exampleRadios4">None of these</label>
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option4">
                                             </div>
                                         </li>
                                     </ul>
                                 </div><!--col-12-->
                             </div><!--row-->
-                            <button class="btn btn-primary w-100" name="save">Submit</button>
+                            <button class="btn btn-primary w-100" name="submit">Submit</button>
                         </form>
                         <hr>
                         <div class="row">

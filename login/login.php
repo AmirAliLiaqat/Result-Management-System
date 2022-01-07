@@ -2,7 +2,7 @@
     require 'conn.php';
     require 'messages.php';
 
-    session_start();
+    // session_start();
 
     if(isset($_POST['login'])) {
         $email = $_POST['email'];
@@ -11,16 +11,20 @@
         $check_email = mysqli_query($conn, "SELECT * FROM `student-accounts` WHERE email = '$email' AND password = '$password'");
 
         if(mysqli_num_rows($check_email) > 0) {
-            $row = mysqli_fetch_assoc($check_email);
-            $_SESSION["user_id"] = $row['id'];
-            // $_SESSION['full_name'] = $row['first_name'];
-            header("Location: welcome.php");
-            echo " <div class='row'>
-                <div class='alert alert-success alert-dismissible fade show' role='alert'>
-                    <strong>Login Successfully...</strong>.
-                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                </div>
-            </div>";
+            if($email === 'amirliaqat2020@gmail.com') {
+                header("Location: ../admin-panal/admin.php");
+            } else {
+                $row = mysqli_fetch_assoc($check_email);
+                // $_SESSION["user_id"] = $row['id'];
+                // $_SESSION['full_name'] = $row['first_name'];
+                header("Location: welcome.php");
+                echo " <div class='row'>
+                    <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                        <strong>Login Successfully...</strong>.
+                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>
+                </div>";
+            }
         } else {
             echo " <div class='row'>
                 <div class='alert alert-danger alert-dismissible fade show' role='alert'>
@@ -29,6 +33,8 @@
                 </div>
             </div>";
         }
+
+        
     }
 
 ?>

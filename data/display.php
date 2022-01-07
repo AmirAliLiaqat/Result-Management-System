@@ -18,12 +18,12 @@
         <div class="container-fluid py-3">
             <div class="row bg-white py-3">
                 <h1 class="text-center text-primary" style="text-transform:uppercase; text-shadow: 2px 2px #000 !important; font-weight:bold">Students Result</h1>  
-                <div class="col-md-12">
-                    <table class="table table-bordered table-hover table-striped">
+                <div class="col-md-12" style="overflow-x: auto">
+                    <table class="table table-bordered table-striped table-hover">
                         <thead>
                             <tr class="text-center bg-dark text-white">
                                 <th>Stu Id</th>
-                                <!-- <th>Class</th> -->
+                                <th>Class</th>
                                 <th>Fitst Name</th>
                                 <th>Last Name</th>
                                 <th>Email</th>
@@ -42,9 +42,7 @@
                             </tr>
                         </thead>
                         <?php  
-                            require 'conn.php'; 
-                            require 'messages.php'; 
-                            require 'methods.php'; 
+                            require 'conn.php';
                             
                             $sql = "SELECT * FROM `student-data`";
                             $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
@@ -56,7 +54,7 @@
                         <tbody>
                             <tr class = "text-center">
                                 <td> <?php echo $row['student_id']; ?> </td>
-                                <!-- <td> <?php echo $row['class']; ?> </td> -->
+                                <td> <?php echo $row['class']; ?> </td>
                                 <td> <?php echo $row['first_name']; ?> </td>
                                 <td> <?php echo $row['last_name']; ?> </td>
                                 <td> <?php echo $row['email']; ?> </td>
@@ -87,7 +85,7 @@
                         }
                         ?>
                     </table>
-                    <button class="btn btn-info mx-1" type="submit" name="addNew" style="width:10%;">
+                    <button class="btn btn-info mb-2" type="submit" name="addNew" style="width:10%;">
                         <a href="http://localhost/result-management-system/data/insert.php" class="text-white" style="text-decoration:none;">Add New</a>
                     </button>
                 </div><!--col-md-12-->
