@@ -5,7 +5,7 @@
   font-family: sans-serif;
 }
 body{
-  background: rgb(172, 154, 154)!important;
+  background: #FFFFF7!important;
 }
 /* section{
   overflow: hidden;
@@ -15,7 +15,7 @@ body{
 }
 .navbar-brand img{
   width: 100px;
-  height: 70px;
+  /* height: 70px; */
 }
 .navbar .container .collapse ul li a:hover{
   color: red;
@@ -94,11 +94,7 @@ body{
   margin-top: -60px;
   padding-bottom: 20px;
 }
-.col-md-5 p{
-  font-weight: bold;
-  font-style: italic;
-}
-.col-md-6 p{
+.col-md-5 p, .col-md-6 p, .col-md-12 p{
   font-weight: bold;
   font-style: italic;
 }
@@ -201,4 +197,59 @@ footer .col-md-6 i{
   align-items: center;
   justify-content: center;
   font-size: 24px;
+}
+
+/***************** Admin Css ******************/
+/* .dashboard-menu nav ul .main_li .sub_ul{
+  display: none;
+} */
+.dashboard-menu nav ul .main_li h5{
+  width: 150px;
+  display: inline-block;
+}
+.dashboard-menu nav ul .main_li span{
+ cursor: pointer;
+}
+.dashboard-menu nav ul .main_li .sub_li{
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+.dashboard-menu nav ul .main_li .sub_li:hover{
+  background-color: lime;
+}
+.dashboard-menu nav ul .main_li .sub_li a{
+  width: 100%;
+}
+.right_menu{
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+.avatar img{
+  width: 50px;
+  height: 50px;
+}
+.avatar{
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none;
+}
+.avatar:hover .avatar_profile{
+  display: block;
+}
+.avatar_profile{
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 150px;
+}
+.dashboard_col{
+  width: 250px!important;
+  margin-left:10px;
+}
+.col-md-6 label, .col-md-3 label, .col-md-12 label{
+  font-style: italic;
+  font-weight: bold;
 }
