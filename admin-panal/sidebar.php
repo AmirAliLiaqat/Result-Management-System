@@ -18,7 +18,7 @@
                                         <ul class="m-0 p-0 list-unstyled sub_ul sub_ul_second">
                                             <li class="p-2 sub_li"><i class="fas fa-user-plus"></i>&nbsp;<a href="register-student.php" class="text-decoration-none text-secondary">Register Student</a></li>
                                             <li class="p-2 sub_li"><i class="fas fa-user-circle"></i>&nbsp;<a href="login-student.php" class="text-decoration-none text-secondary">Login Student</a></li>
-                                            <li class="p-2 sub_li"><i class="fas fa-eye"></i>&nbsp;<a href="display-users.php" class="text-decoration-none text-secondary">Student Panal</a></li>
+                                            <li class="p-2 sub_li"><i class="fas fa-eye"></i>&nbsp;<a href="display-student.php" class="text-decoration-none text-secondary">Student Panal</a></li>
                                             <li class="p-2 sub_li"><i class="fas fa-trash-alt"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">Delete Student</a></li>
                                             <li class="p-2 sub_li"><i class="fas fa-user-edit"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">Edit Student</a></li>
                                             <li class="p-2 sub_li"><i class="fas fa-sign-out-alt"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">Logout Student</a></li>
@@ -28,15 +28,15 @@
                                         <h5 class="text-secondary">Exams</h5>
                                         <span class="trigger_arrow">&#129171;</span>
                                         <ul class="m-0 p-0 list-unstyled sub_ul sub_ul_third">
-                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">English</a></li>
-                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">Urdu</a></li>
-                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">Maths</a></li>
-                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">Physics</a></li>
-                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">Chemistry</a></li>
-                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">Biology</a></li>
-                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">Computer</a></li>
-                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">Islamiyst</a></li>
-                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="#" class="text-decoration-none text-secondary">Pak Study</a></li>
+                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="english.php" class="text-decoration-none text-secondary">English</a></li>
+                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="urdu.php" class="text-decoration-none text-secondary">Urdu</a></li>
+                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="maths.php" class="text-decoration-none text-secondary">Maths</a></li>
+                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="physics.php" class="text-decoration-none text-secondary">Physics</a></li>
+                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="chemistry.php" class="text-decoration-none text-secondary">Chemistry</a></li>
+                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="biology.php" class="text-decoration-none text-secondary">Biology</a></li>
+                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="computer.php" class="text-decoration-none text-secondary">Computer</a></li>
+                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="islamiyat.php" class="text-decoration-none text-secondary">Islamiyst</a></li>
+                                            <li class="p-2 sub_li"><i class="fas fa-book-open"></i>&nbsp;<a href="pak-study.php" class="text-decoration-none text-secondary">Pak Study</a></li>
                                         </ul>
                                     </li>
                                    <li class="p-2 text-secondary  main_li main_li_fourth">
