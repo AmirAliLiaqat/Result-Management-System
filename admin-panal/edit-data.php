@@ -1,5 +1,5 @@
 <?php 
-    require '../login/conn.php'; 
+    require '../main-files/conn.php'; 
 
     if(isset($_POST['update'])) {
         $id = $_GET['id'];

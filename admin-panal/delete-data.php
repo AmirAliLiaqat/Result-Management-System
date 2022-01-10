@@ -1,6 +1,6 @@
 <?php
-    require 'conn.php';
-    require 'messages.php';
+    require '../main-files/.php';
+    require '../main-files/.php';
 
     $id = $_GET['id'];
 

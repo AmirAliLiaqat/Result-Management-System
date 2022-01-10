@@ -1,7 +1,7 @@
 <?php 
-    require '../login/conn.php'; 
-    require '../login/messages.php'; 
-    // require '../methods.php'; 
+    require '../main-files/conn.php'; 
+    require '../main-files/messages.php'; 
+    // require '../main-files/methods.php'; 
 
     if(isset($_POST['save'])) {
         $studentId = $_POST['stuId'];

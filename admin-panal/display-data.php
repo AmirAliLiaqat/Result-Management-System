@@ -51,7 +51,7 @@
                                         </tr>
                                     </thead>
                                     <?php  
-                                        require '../login/conn.php';
+                                        require '../main-files/conn.php';
                                         
                                         $sql = "SELECT * FROM `student-data`";
                                         $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
