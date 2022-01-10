@@ -1,6 +1,6 @@
 <?php
-    require 'conn.php';
-    require 'messages.php';
+    require '../main-files/conn.php';
+    require '../main-files/messages.php';
 
     // session_start();
 
@@ -12,7 +12,9 @@
 
         if(mysqli_num_rows($check_email) > 0) {
             if($email === 'amirliaqat2020@gmail.com') {
-                header("Location: ../admin-panal/admin.php");
+                header("Location: ../admin-panal/dashboard.php");
+            } elseif($email === 'amirliaqat148@gmail.com'){
+                header("Location: ../teacher-panal/dashboard.php");
             } else {
                 $row = mysqli_fetch_assoc($check_email);
                 // $_SESSION["user_id"] = $row['id'];

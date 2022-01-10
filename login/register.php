@@ -1,6 +1,6 @@
 <?php
-    require 'conn.php';
-    require 'messages.php';
+    require '../main-files/conn.php';
+    require '../main-files/messages.php';
 
     if(isset($_POST['save'])) {
         $firstName = $_POST['fname'];
