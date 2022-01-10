@@ -22,12 +22,6 @@
                     <div class="links">
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
-                                <a class="btn btn-primary" href="http://localhost/result-management-system/data/insert.php" role="button">Insert Data</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn btn-secondary" href="http://localhost/result-management-system/data/display.php" role="button">Show Data</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="btn btn-success" href="http://localhost/result-management-system/login/login.php" role="button">Login</a>
                             </li>
                             <li class="nav-item">
