@@ -48,18 +48,18 @@
                             <a class="nav-link active" aria-current="page" href="#">Contact</a>
                         </li>
                     </ul>
-                    <div class="user-porfile text-white" style="font-size:18px;">
-                        <i class="fas fa-user-circle"></i>
-                        Hello,
-                        <?php echo $_SESSION['first_name']; ?>
-                        <div class="user-setting">
-                            <ul>
-                                <li><a href="edit-user.php?id=<?php echo $_SESSION['user_id']; ?>">View Profile</a></li>
-                                <li><a href="delete-user.php?id=<?php echo $_SESSION['user_id']; ?>">Delete Account</a></li>
-                                <li><a href="logout.php">Logout</a></li>
-                            </ul>
-                        </div><!--user-setting-->
-                    </div><!--user-porfile-->
+                    <div class="avatar px-2 text-white">
+                        <span>
+                            Hello, 
+                            <?php echo $_SESSION['first_name']; ?>
+                        </span>
+                        <img src="../images/avatar.png">
+                        <div class="avatar_profile">
+                            <a href="edit-user.php?id=<?php echo $_SESSION['user_id']; ?>" class="btn btn-secondary text-start w-100">Edit Profile</a>
+                            <a href="delete-user.php?id=<?php echo $_SESSION['user_id']; ?>" class="btn btn-secondary text-start w-100">Delete Accont</a>
+                            <a href="logout.php?id=<?php echo $_SESSION['user_id']; ?>" class="btn btn-secondary text-start w-100">Logout</a>
+                        </div><!--avatar_profile-->
+                    </div><!--avatar-->
                 </div><!--collapse-->
             </div><!--container-->
         </nav>
@@ -69,126 +69,76 @@
     <!-------------------- Section Start -------------------->
     <section>
        <div class="container my-5">
-            <div class="row justify-content-center">
-                <div class="col-md-8 p-0" style="background: #ccc; border-radius: 15px;">
-                    <div class="card-header">
-                        <h4>STUDENT <br> REPORT CARD</h4>
-                        <img src="../images/logo.png" alt="">
-                    </div><!--card-header-->
-                    <div class="card-body">
-                        <div class="row" style="font-weight:bold; font-style:italic">
-                            <div class="col-md-4">
-                                <p>Student Id : <input type="text" name="name" id="" class="form-control"></p>
-                                <p>Class : <input type="stuId" name="name" id="" class="form-control"></p>
-                            </div><!--col-md-4-->
-                            <div class="col-md-4 justify-content-end">
-                                <p>Name : <input type="father" name="name" id="" class="form-control"></p>
-                                <p>Grade : <input type="class" name="name" id="" class="form-control"></p>
-                            </div><!--col-md-4-->
-                            <div class="col-md-4 justify-content-end">
-                                <p>Father : <input type="father" name="name" id="" class="form-control"></p>
-                                <p>Year : <input type="class" name="name" id="" class="form-control"></p>
-                            </div><!--col-md-4-->
-                        </div><!--row-->
-                        <div class="row">
-                            <table class="table table-hover table-striped table-bordered">
-                                <thead>
-                                    <tr class="text-center">
-                                        <th> <p> <b>Sr. No</b> </p> </th>
-                                        <th> <p> <b>Subjects</b> </p> </th>
-                                        <th> <p> <b>Full Marks</b> </p> </th>
-                                        <th> <p> <b>Obtained</b> </p> </th>
-                                        <th> <p> <b>Percentage</b> </p> </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> Total </td>
-                                        <td>  </td>
-                                        <td> 800 </td>
-                                        <td> 720 </td>
-                                        <td> 96.5% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> Grade </td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td> A+ </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p align="center">Teacher Sign :  <img src="../images/signature.png" style="width: 300px;"></p>
-                            </div><!--col-md-6-->
-                            <div class="col-md-6">
-                                <p align="center">Principal Sign :  <img src="../images/signature1.png" style="width: 300px;"></p>
-                            </div><!--col-md-6-->
-                        </div><!--row-->
-                    </div><!--card-body-->
-                    <div class="card-footer">
-                        <p class="text-center">“The best way to predict your future is to create it” - <strong><a href="https://en.wikipedia.org/wiki/Abraham_Lincoln">Abraham Lincoln</a></strong></p>
-                        <p class="text-center"><a href="http://localhost/result-management-system">www.result-management-system.com</a></p>
-                    </div><!--card-footer-->
-                </div><!--col-md-8-->
+            <h3 class="text-center text-uppercase fst-italic py-3" style="color:blue">Select the papper you want to do</h3>
+            <div class="row">
+                <div class="col-md-4 text-white text-center p-2 bg-primary">Total Pappers = 20</div><!--col-md-4-->
+                <div class="col-md-4 text-white text-center p-2 bg-success">Taken Pappers = 13</div><!--col-md-4-->
+                <div class="col-md-4 text-white text-center p-2 bg-info">Pendding Pappers = 7</div><!--col-md-4-->
+            </div><!--row-->
+            <div class="row py-5">
+                <div class="col-md-12">
+                    <table class="w-100 table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th class="p-2">Sr. No</th>
+                                <th class="p-2">Papper Name</th>
+                                <th class="p-2">Marks</th>
+                                <th class="p-2">Start</th>
+                                <th class="p-2">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>English</td>
+                                <td>50</td>
+                                <td>
+                                    <a href="english.php" class="btn btn-primary m-1 fst-italic" name="press">Start Now</a>
+                                </td>
+                                <td class="text-success">
+                                    <i class="far fa-check-circle"></i>
+                                    <h6>Taken</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Urdu</td>
+                                <td>50</td>
+                                <td>
+                                    <a href="urdu.php" class="btn btn-primary m-1 fst-italic">Start Now</a>
+                                </td>
+                                <td class="text-danger">
+                                    <i class="far fa-times-circle"></i>
+                                    <h6>Pendding</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Maths</td>
+                                <td>50</td>
+                                <td>
+                                    <a href="" class="btn btn-primary m-1 fst-italic">Start Now</a>
+                                </td>
+                                <td class="text-success">
+                                    <i class="far fa-check-circle"></i>
+                                    <h6>Taken</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Computer</td>
+                                <td>50</td>
+                                <td>
+                                    <a href="" class="btn btn-primary m-1 fst-italic">Start Now</a>
+                                </td>
+                                <td class="text-success">
+                                    <i class="far fa-check-circle"></i>
+                                    <h6>Taken</h6>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!--col-md-12-->
             </div><!--row-->
        </div><!--container-->
     </section>
