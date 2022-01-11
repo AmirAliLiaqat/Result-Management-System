@@ -46,161 +46,51 @@
                                         </div><!--row-->
                                         <hr>
                                         <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
+                                        <?php  
+                                            require '../main-files/conn.php';
+                                            
+                                            $sql = "SELECT * FROM `pappers` WHERE papper_name = 'comp'";
+                                            $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
+
+                                            if(mysqli_num_rows($query) > 0) {
+                                                while($row = mysqli_fetch_assoc($query)) {
+                                                
+                                        ?>
                                         <div class="row">
                                             <div class="col-12">
-                                                <h5>Q1. The term ‘Computer’ is derived from__________?</h5>
+                                                <h5>Q1. <?php echo $row['question']; ?></h5>
                                                 <ul class="question-1" style="list-style:none; padding:0">
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Latin</label>
+                                                            <label class="form-check-label" for="exampleRadios1"><?php echo $row['option1']; ?></label>
                                                             <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">German</label>
+                                                            <label class="form-check-label" for="exampleRadios2"><?php echo $row['option2']; ?></label>
                                                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">French</label>
+                                                            <label class="form-check-label" for="exampleRadios3"><?php echo $row['option3']; ?></label>
                                                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Arabic</label>
+                                                            <label class="form-check-label" for="exampleRadios4"><?php echo $row['option4']; ?></label>
                                                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div><!--col-12-->
                                         </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q2. Who is the father of Computer?</h5>
-                                                <ul class="question-2" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Allen Turing</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Charles Babbage</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Simur Cray</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Augusta Adaming</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q3. The basic operations performed by a computer are__________?</h5>
-                                                <ul class="question-3" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Arithmetic operation</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Logical operation</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Storage and relative</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">All the above</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q4. Who is the father of Internet ?</h5>
-                                                <ul class="question-4" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Chares Babbage</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Vint Cerf</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Denis Riche</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Martin Cooper</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q5. If a computer has more than one processor then it is known as__________?</h5>
-                                                <ul class="question-5" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Uni-process</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Multiprocessor</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Multi-threaded</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Multi-programming</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
+                                        <?php
+                                                }
+                                            }
+                                        ?>
                                         <button class="btn btn-primary w-100" name="save">Submit</button>
                                     </form>
                                     <hr>

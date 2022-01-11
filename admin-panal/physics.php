@@ -30,7 +30,7 @@
                                     <img src="../images/logo.png" alt="">
                                 </div><!--card-header-->
                                 <div class="card-body">
-                                    <form action="" method="">
+                                    <form action="" method="post">
                                         <div class="row">
                                             <div class="col-md-5">
                                                 <p>Name : <input type="text" name="name" id="" class="form-control"></p>
@@ -46,161 +46,51 @@
                                         </div><!--row-->
                                         <hr>
                                         <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
+                                        <?php  
+                                            require '../main-files/conn.php';
+                                            
+                                            $sql = "SELECT * FROM `pappers` WHERE papper_name = 'phy'";
+                                            $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
+
+                                            if(mysqli_num_rows($query) > 0) {
+                                                while($row = mysqli_fetch_assoc($query)) {
+                                                
+                                        ?>
                                         <div class="row">
                                             <div class="col-12">
-                                                <h5>Q1. The SI unit of Heat is________?</h5>
+                                                <h5>Q1. <?php echo $row['question']; ?></h5>
                                                 <ul class="question-1" style="list-style:none; padding:0">
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Watt</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Volt</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Joule</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Newton</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q2. The branch of science which deals with the properties of matter and energy is called__________?</h5>
-                                                <ul class="question-2" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Biology</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Geography</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Physics</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Chemistry</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q3. Physics is one of the branches of___________?</h5>
-                                                <ul class="question-3" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Physical sciences</label>
+                                                            <label class="form-check-label" for="exampleRadios1"><?php echo $row['option1']; ?></label>
                                                             <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Biological sciences</label>
+                                                            <label class="form-check-label" for="exampleRadios2"><?php echo $row['option2']; ?></label>
                                                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Social science</label>
+                                                            <label class="form-check-label" for="exampleRadios3"><?php echo $row['option3']; ?></label>
                                                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Life sciences branch</label>
+                                                            <label class="form-check-label" for="exampleRadios4"><?php echo $row['option4']; ?></label>
                                                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div><!--col-12-->
                                         </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q4. The Branch of Physics deals with highly energetic ions is called__________?</h5>
-                                                <ul class="question-4" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Elementary articles</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Article physics</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Ionic physics</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Plasma physics</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q5. The branch of Physics which deals with properties of gravitational?</h5>
-                                                <ul class="question-5" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Field theory</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Acoustics</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Hydro dynamic</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Optics</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
+                                        <?php
+                                                }
+                                            }
+                                        ?>
                                         <button class="btn btn-primary w-100" name="save">Submit</button>
                                     </form>
                                     <hr>

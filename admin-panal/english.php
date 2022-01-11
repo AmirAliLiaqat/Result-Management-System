@@ -1,22 +1,3 @@
-<?php 
-    require '../login/conn.php'; 
-
-    if(isset($_POST['update'])) {
-        $id = $_GET['id'];
-        $stuId = $_POST['stuId'];
-        $class = $_POST['class'];
-        $firstName = $_POST['fname'];
-        $lastName = $_POST['lname'];
-        $email = $_POST['email'];
-
-        $sql = "UPDATE `student-data` SET `student_id` = '$stuId', 
-        `class` = '$class', `first_name` = '$firstName', `last_name` = '$lastName', `email` = '$email' WHERE id = $id";
-
-        mysqli_query($conn, $sql) or die("Query Failed");
-
-        header('location: display-data.php');
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,161 +49,51 @@
                                         </div><!--row-->
                                         <hr>
                                         <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
+                                        <?php  
+                                            require '../main-files/conn.php';
+                                            
+                                            $sql = "SELECT * FROM `pappers` WHERE papper_name = 'eng'";
+                                            $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
+
+                                            if(mysqli_num_rows($query) > 0) {
+                                                while($row = mysqli_fetch_assoc($query)) {
+                                                
+                                        ?>
                                         <div class="row">
                                             <div class="col-12">
-                                                <h5>Q1. Anam is the smartest _______ girls?</h5>
+                                                <h5>Q1. <?php echo $row['question']; ?></h5>
                                                 <ul class="question-1" style="list-style:none; padding:0">
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">among others</label>
+                                                            <label class="form-check-label" for="exampleRadios1"><?php echo $row['option1']; ?></label>
                                                             <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">of all others</label>
+                                                            <label class="form-check-label" for="exampleRadios2"><?php echo $row['option2']; ?></label>
                                                             <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">of all</label>
+                                                            <label class="form-check-label" for="exampleRadios3"><?php echo $row['option3']; ?></label>
                                                             <input class="form-check-input true" type="checkbox" name="myAnswer1" id="exampleRadios3" value="option3">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">of</label>
+                                                            <label class="form-check-label" for="exampleRadios4"><?php echo $row['option4']; ?></label>
                                                             <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option4">
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div><!--col-12-->
                                         </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q2. Identify the correct Spellings:</h5>
-                                                <ul class="question-1" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Metropolitan</label>
-                                                            <input class="form-check-input true" type="checkbox" name="myAnswer2" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Metropoleton</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Metropulitan</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4"> None of these</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q3. Antonym of “RAUCOUS” is _________?</h5>
-                                                <ul class="question-1" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Hoarse</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Subdued</label>
-                                                            <input class="form-check-input true" type="checkbox" name="myAnswer3" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Strident</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">None of these</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q4. “A PIPE DREAM” means ?</h5>
-                                                <ul class="question-1" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">A pleasant dream</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">A bad dream</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">An impracticable plan</label>
-                                                            <input class="form-check-input true" type="checkbox" name="myAnswer4" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">None of these</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q5. She has been exempted ______ night duty.</h5>
-                                                <ul class="question-1" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">with</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">for</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">from</label>
-                                                            <input class="form-check-input true" type="checkbox" name="myAnswer5" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">None of these</label>
-                                                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
+                                        <?php
+                                                }
+                                            }
+                                        ?>
                                         <button class="btn btn-primary w-100" name="submit">Submit</button>
                                     </form>
                                     <hr>

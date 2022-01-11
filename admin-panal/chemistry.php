@@ -46,161 +46,51 @@
                                         </div><!--row-->
                                         <hr>
                                         <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
+                                        <?php  
+                                            require '../main-files/conn.php';
+                                            
+                                            $sql = "SELECT * FROM `pappers` WHERE papper_name = 'chem'";
+                                            $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
+
+                                            if(mysqli_num_rows($query) > 0) {
+                                                while($row = mysqli_fetch_assoc($query)) {
+                                                
+                                        ?>
                                         <div class="row">
                                             <div class="col-12">
-                                                <h5>Q1. The soul of chemistry is dealing with___________?</h5>
+                                                <h5>Q1. <?php echo $row['question']; ?></h5>
                                                 <ul class="question-1" style="list-style:none; padding:0">
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Internal structural changes in matter</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Composition of matter</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Properties of matter</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Composition and properties of matter</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q2. The radioactive isotope of hydrogen is called___________?</h5>
-                                                <ul class="question-2" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">tritium</label>
+                                                            <label class="form-check-label" for="exampleRadios1"><?php echo $row['option1']; ?></label>
                                                             <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">deuterium</label>
+                                                            <label class="form-check-label" for="exampleRadios2"><?php echo $row['option2']; ?></label>
                                                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">protium</label>
+                                                            <label class="form-check-label" for="exampleRadios3"><?php echo $row['option3']; ?></label>
                                                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">ortho-hydrogen</label>
+                                                            <label class="form-check-label" for="exampleRadios4"><?php echo $row['option4']; ?></label>
                                                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div><!--col-12-->
                                         </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q3. Electron was discovered by?</h5>
-                                                <ul class="question-3" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Michael Faraday</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">James Maxwell</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Yuri Gagarin</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">J.J Thomson</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q4. Which of the following is a substance?</h5>
-                                                <ul class="question-4" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Sea water</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Brass</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Tape water</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Graphite</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Q5. What is a mixture of Potassium Nitrate Powdered Charcoal and Sulphur called?</h5>
-                                                <ul class="question-5" style="list-style:none; padding:0">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios1">Paint</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios2">Glass</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios3">Gun Powder</label>
-                                                            <input class="form-check-input true" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" for="exampleRadios4">Cement</label>
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div><!--col-12-->
-                                        </div><!--row-->
+                                        <?php
+                                                }
+                                            }
+                                        ?>
                                         <button class="btn btn-primary w-100" name="save">Submit</button>
                                     </form>
                                     <hr>
