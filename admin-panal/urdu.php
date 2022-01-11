@@ -58,7 +58,7 @@
                                         ?>
                                         <div class="row">
                                             <div class="col-12" align="right">
-                                                <h5><?php echo $row['question']; ?> Q1.</h5>
+                                                <h5><?php echo $row['question']; ?> <?php echo $row['question_number']; ?></h5>
                                                 <ul class="question-1"style="list-style:none;">
                                                     <li>
                                                         <div class="form-check">
