@@ -1,12 +1,14 @@
 <?php
     require '../main-files/conn.php';
-    require '../main-files/messages.php';
 
-    // session_start();
+    session_start();
 
     if(isset($_POST['login'])) {
-        $email = $_POST['email'];
-        $password = md5($_POST["password"]);
+        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $password = mysqli_real_escape_string($conn, md5($_POST["password"]));
+
+        // setcookie ("email",$_POST["email"],time()+ 86400);
+	    // setcookie ("password",$_POST["password"],time()+ 86400);
 
         $check_email = mysqli_query($conn, "SELECT * FROM `student-accounts` WHERE email = '$email' AND password = '$password'");
 
@@ -17,15 +19,11 @@
                 header("Location: ../teacher-panal/dashboard.php");
             } else {
                 $row = mysqli_fetch_assoc($check_email);
-                // $_SESSION["user_id"] = $row['id'];
-                // $_SESSION['full_name'] = $row['first_name'];
+                $_SESSION['user_id'] = $row['id'];
+                $_SESSION['first_name'] = $row['first_name'];
+                // $_SESSION['$_COOKIE["user_id"]'] = $row['id'];
+                // $_SESSION['$_COOKIE["first_name"]'] = $row['first_name'];
                 header("Location: welcome.php");
-                echo " <div class='row'>
-                    <div class='alert alert-success alert-dismissible fade show' role='alert'>
-                        <strong>Login Successfully...</strong>.
-                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                    </div>
-                </div>";
             }
         } else {
             echo " <div class='row'>
@@ -35,10 +33,9 @@
                 </div>
             </div>";
         }
-
         
     }
-
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">

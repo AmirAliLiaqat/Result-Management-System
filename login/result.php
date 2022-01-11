@@ -1,20 +1,10 @@
-<?php
-    session_start();
-
-    // if(!isset($_SESSION['user_id'])) {
-    //     header("Location: login.php");
-    // }
-
-    // setcookie ("email",$_POST["email"],time()+ 3600);
-	//     setcookie ("password",$_POST["password"],time()+ 3600);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome - Result Management System</title>
+    <title>Result - Result Management System</title>
     <link rel="shortcut icon" href="../images/logo.png">
     <link rel="stylesheet" href="../css/style.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -51,12 +41,12 @@
                     <div class="user-porfile text-white" style="font-size:18px;">
                         <i class="fas fa-user-circle"></i>
                         Hello,
-                        <?php echo $_SESSION['first_name']; ?>
+                        <!-- <?php echo $_SESSION['id']; ?> -->
                         <div class="user-setting">
                             <ul>
-                                <li><a href="edit-user.php?id=<?php echo $_SESSION['user_id']; ?>">View Profile</a></li>
-                                <li><a href="delete-user.php?id=<?php echo $_SESSION['user_id']; ?>">Delete Account</a></li>
-                                <li><a href="logout.php">Logout</a></li>
+                                <li><a href="#">View Profile</a></li>
+                                <li><a href="#">Delete Account</a></li>
+                                <li><a href="#">Logout</a></li>
                             </ul>
                         </div><!--user-setting-->
                     </div><!--user-porfile-->
