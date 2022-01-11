@@ -1,4 +1,7 @@
-<!-------------------- Header Start -------------------->
+<?php
+    session_start();
+?>   
+    <!-------------------- Header Start -------------------->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -29,13 +32,17 @@
                         </a>
                     </div><!--right_menu-->
                     <div class="avatar px-2 text-white">
-                        <span>Hello, Teacher</span>
+                        <span>
+                            Hello, 
+                            <?php echo $_SESSION['first_name']; ?>
+                            Ali
+                        </span>
                         <img src="../images/avatar.png">
                         <div class="avatar_profile">
-                            <a href="#" class="btn btn-secondary text-start w-100">View Profile</a>
-                            <a href="#" class="btn btn-secondary text-start w-100">Edit Profile</a>
-                            <a href="#" class="btn btn-secondary text-start w-100">Delete Accont</a>
-                            <a href="#" class="btn btn-secondary text-start w-100">Logout</a>
+                            <a href="view-user.php?id=<?php echo $_SESSION['user_id']; ?>" class="btn btn-secondary text-start w-100">View Profile</a>
+                            <a href="edit-user.php?id=<?php echo $_SESSION['user_id']; ?>" class="btn btn-secondary text-start w-100">Edit Profile</a>
+                            <a href="delete-user.php?id=<?php echo $_SESSION['user_id']; ?>" class="btn btn-secondary text-start w-100">Delete Accont</a>
+                            <a href="logout.php?id=<?php echo $_SESSION['user_id']; ?>" class="btn btn-secondary text-start w-100">Logout</a>
                         </div><!--avatar_profile-->
                     </div><!--avatar-->
                     <div class="right_menu py-2 float-left"><a href="" class="text-white"><i class="fas fa-cogs" style="font-size:24px"></i></a></div>

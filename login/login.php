@@ -13,12 +13,16 @@
         $check_email = mysqli_query($conn, "SELECT * FROM `student-accounts` WHERE email = '$email' AND password = '$password'");
 
         if(mysqli_num_rows($check_email) > 0) {
+            $row = mysqli_fetch_assoc($check_email);
             if($email === 'amirliaqat2020@gmail.com') {
+                $_SESSION['user_id'] = $row['id'];
+                $_SESSION['first_name'] = $row['first_name'];
                 header("Location: ../admin-panal/dashboard.php");
             } elseif($email === 'amirliaqat148@gmail.com'){
+                $_SESSION['user_id'] = $row['id'];
+                $_SESSION['first_name'] = $row['first_name'];
                 header("Location: ../teacher-panal/dashboard.php");
             } else {
-                $row = mysqli_fetch_assoc($check_email);
                 $_SESSION['user_id'] = $row['id'];
                 $_SESSION['first_name'] = $row['first_name'];
                 // $_SESSION['$_COOKIE["user_id"]'] = $row['id'];
