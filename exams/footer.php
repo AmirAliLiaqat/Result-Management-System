@@ -21,7 +21,7 @@
                         </li>
                     </ul>
                 </div><!--col-md-6-->
-                <div class="col-md-6 text-white">
+                <div class="col-md-6 text-white d-flex justify-content-end">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-youtube"></i>
