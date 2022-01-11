@@ -22,12 +22,12 @@
                     </ul>
                 </div><!--col-md-6-->
                 <div class="col-md-6 text-white d-flex justify-content-end">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-google"></i>
-                    <i class="fab fa-github"></i>
+                    <a href="https://www.facebook.com" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" class="text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com" class="text-white"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.google.com" class="text-white"><i class="fab fa-google"></i></a>
+                    <a href="https://www.github.com" class="text-white"><i class="fab fa-github"></i></a>
                 </div><!--col-md-6-->
             </div><!--row-->
             <div class="row mt-2">
