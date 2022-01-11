@@ -32,35 +32,35 @@
                         </div><!--row-->
                         <div class="row">
                             <div class="col-md-3 p-2 bg-primary text-white dashboard_col">
-                                <i class="fas fa-globe-europe " style="font-size: 48px"></i>&nbsp;
+                                <i class="fas fa-user-graduate" style="font-size: 48px"></i>&nbsp;
                                 <div class="content mb-3" style="display: inline-block;">
-                                    <p style="display: inline;">Today Visiting</p> <br>
-                                    <h3 class="d-inline">1.975,224</h3> <br>
-                                    <p style="display: inline;">24% higher yesterday</p>
+                                    <p style="display: inline;">Total Student</p> <br>
+                                    <h3 class="d-inline">100</h3> <br>
+                                    <!-- <p style="display: inline;">24% higher yesterday</p> -->
                                 </div>
                             </div><!--col-md-3-->
                             <div class="col-md-3 p-2 bg-secondary text-white dashboard_col">
-                                <i class="fas fa-shopping-bag " style="font-size: 48px"></i>&nbsp;
+                                <i class="fas fa-user-tie" style="font-size: 48px"></i>&nbsp;
                                 <div class="content mb-3" style="display: inline-block;">
-                                    <p style="display: inline;">Today Sales</p> <br>
-                                    <h3 class="d-inline">$329,291</h3> <br>
-                                    <p style="display: inline;">$390,312 before use</p>
+                                    <p style="display: inline;">Login Students</p> <br>
+                                    <h3 class="d-inline">55</h3> <br>
+                                    <!-- <p style="display: inline;">$390,312 before use</p> -->
                                 </div>
                             </div><!--col-md-3-->
                             <div class="col-md-3 p-2 bg-success text-white dashboard_col">
-                                <i class="fas fa-tv " style="font-size: 48px"></i>&nbsp;
+                                <i class="fas fa-user-plus" style="font-size: 48px"></i>&nbsp;
                                 <div class="content mb-3" style="display: inline-block;">
-                                    <p style="display: inline;">Unique Visits</p> <br>
-                                    <h3 class="d-inline">54.45%</h3> <br>
-                                    <p style="display: inline;">17% average </p>
+                                    <p style="display: inline;">Remaining Student</p> <br>
+                                    <h3 class="d-inline">45</h3> <br>
+                                    <!-- <p style="display: inline;">17% average </p> -->
                                 </div>
                             </div><!--col-md-3-->
                             <div class="col-md-3 p-2 bg-danger text-white dashboard_col">
-                                <i class="fas fa-clock " style="font-size: 48px"></i>&nbsp;
+                                <i class="fas fa-book-open " style="font-size: 48px"></i>&nbsp;
                                 <div class="content mb-3" style="display: inline-block;">
-                                    <p style="display: inline;">Bounce Date</p> <br>
-                                    <h3 class="d-inline">32.16%</h3> <br>
-                                    <p style="display: inline;">65.45% average time</p>
+                                    <p style="display: inline;">Total Pappers</p> <br>
+                                    <h3 class="d-inline">9</h3> <br>
+                                    <!-- <p style="display: inline;">65.45% average time</p> -->
                                 </div>
                             </div><!--col-md-3-->
                         </div><!--row-->

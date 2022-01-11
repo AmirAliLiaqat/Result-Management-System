@@ -29,7 +29,7 @@
                         </a>
                     </div><!--right_menu-->
                     <div class="avatar px-2 text-white">
-                        <span>Hello, Admin</span>
+                        <span>Hello, Teacher</span>
                         <img src="../images/avatar.png">
                         <div class="avatar_profile">
                             <a href="#" class="btn btn-secondary text-start w-100">View Profile</a>
