@@ -35,7 +35,6 @@
                         <span>
                             Hello, 
                             <?php echo $_SESSION['first_name']; ?>
-                            Ali
                         </span>
                         <img src="../images/avatar.png">
                         <div class="avatar_profile" style="margin-left:-23px;">

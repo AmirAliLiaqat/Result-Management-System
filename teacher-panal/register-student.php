@@ -14,7 +14,7 @@
 
         if(strlen($firstName) >= 3 && strlen($firstName) < 20 && strlen($lastName) >= 3 && strlen($lastName) < 20) {
            if(!mysqli_num_rows($query) > 0) {
-                if(strlen($password) > 8 && strlen($password) < 20) {
+                if(strlen($password) >= 8 && strlen($password) < 20) {
                     if($password === $cpassword) {
                         $sql = "INSERT INTO `student-accounts`(`first_name`, `last_name`, `email`, `password`) 
                         VALUES ('$firstName','$lastName','$email', md5('$password'))";
@@ -121,7 +121,7 @@
                                 </div><!--col-md-6-->
                                 <div class="col-md-6">
                                     <input type="password" name="password" id="id_password" class="form-control" value="" required>
-                                    <i class="far fa-eye"  id="togglePassword" style="margin-left: 510px; cursor: pointer;"></i>
+                                    <i class="far fa-eye"  id="togglePassword" style="margin-left: 470px; cursor: pointer;"></i>
                                 </div><!--col-md-6-->
                             </div><!--row-->
                             <div class="row px-3 py-2">
@@ -131,7 +131,7 @@
                                 </div><!--col-md-6-->
                                 <div class="col-md-6">
                                     <input type="password" name="cpassword" id="id_cpassword" class="form-control" value="" required>
-                                    <i class="far fa-eye"  id="toggleCpassword" style="margin-left: 510px; cursor: pointer;"></i>
+                                    <i class="far fa-eye"  id="toggleCpassword" style="margin-left: 470px; cursor: pointer;"></i>
                                 </div><!--col-md-6-->
                                 <p class=" pt-4">
                                     Already have an account ?
@@ -151,7 +151,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         
     <!-------------------- Custom Js -------------------->
-    <script src="js/script.js"></script>
+    <script src="../login/script.js"></script>
 
 </body>
 </html>

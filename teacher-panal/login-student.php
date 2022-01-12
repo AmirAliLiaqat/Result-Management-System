@@ -11,12 +11,12 @@
         $check_email = mysqli_query($conn, "SELECT * FROM `student-accounts` WHERE email = '$email' AND password = '$password'");
 
         if(mysqli_num_rows($check_email) > 0) {
-            if($email === 'amirliaqat2020@gmail.com') {
+            if($email === 'admin@gmail.com') {
                 header("Location: ../admin-panal/dashboard.php");
             } else {
                 $row = mysqli_fetch_assoc($check_email);
                 // $_SESSION["user_id"] = $row['id'];
-                // $_SESSION['full_name'] = $row['first_name'];
+                // $_SESSION['first_name'] = $row['first_name'];
                 header("Location: ../login/welcome.php");
                 echo " <div class='row'>
                     <div class='alert alert-success alert-dismissible fade show' role='alert'>
@@ -65,7 +65,7 @@
                     <div class="col-md-10">
                         <div class="row justify-content-center m-5">
                             <div class="col-md-6 form-content">   
-                                <h1 class="text-center">Login Student</h1>
+                                <h1 class="text-center fst-italic">Login Student</h1>
                                 <form action="" method="post">
                                     <label for="email" class="form-label pt-2"><b>Email :</b></label>
                                     <input type="text" name="email" class="form-control" placeholder="e.g my@gmail.com" value="" required>
@@ -84,6 +84,47 @@
                                     <button type="submit" class="btn btn-primary w-100" name="login">Login</button>
                                 </form>
                             </div><!--col-md-4-->
+                        </div><!--row-->
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <table class="w-100 text-center table-bordered table-hover">
+                                    <thead>
+                                        <tr><h5 class="text-center bg-info p-2 text-white fst-italic">‿︵‿︵ʚɞ Use These Emails  ʚɞ‿︵‿︵</h5></tr> 
+                                        <tr>
+                                            <th>Sr. No</th>
+                                            <th>Email</th>
+                                            <th>Password</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-1">1.</td>
+                                            <td>admin@gmail.com</td>
+                                            <td>admin2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">2.</td>
+                                            <td>teacher@gmail.com</td>
+                                            <td>teacher2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">3.</td>
+                                            <td>proctor@gmail.com</td>
+                                            <td>proctor2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">4.</td>
+                                            <td>teammate@gmail.com</td>
+                                            <td>teammate2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">5.</td>
+                                            <td>student@gmail.com</td>
+                                            <td>student2022</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div><!--col-md-6-->
                         </div><!--row-->
                     </div><!--col-md-10-->
                 </div><!--row-->

@@ -14,11 +14,11 @@
 
         if(mysqli_num_rows($check_email) > 0) {
             $row = mysqli_fetch_assoc($check_email);
-            if($email === 'amirliaqat2020@gmail.com') {
+            if($email === 'admin@gmail.com') {
                 $_SESSION['user_id'] = $row['id'];
                 $_SESSION['first_name'] = $row['first_name'];
                 header("Location: ../admin-panal/dashboard.php");
-            } elseif($email === 'amirliaqat148@gmail.com'){
+            } elseif($email === 'teacher@gmail.com'){
                 $_SESSION['user_id'] = $row['id'];
                 $_SESSION['first_name'] = $row['first_name'];
                 header("Location: ../teacher-panal/dashboard.php");
@@ -63,24 +63,63 @@
             <div class="row justify-content-center m-5">
                 <div class="col-md-6 form-content">   
                 <h1 class="text-center">Login</h1>
-                        <form action="" method="post">
-                            <label for="email" class="form-label pt-2"><b>Email :</b></label>
-                            <input type="text" name="email" class="form-control" placeholder="e.g my@gmail.com" value="" required>
-                            <label for="password" class="form-label pt-2"><b>Password :</b></label>
-                            <input type="password" name="password" id="id_password" class="form-control" value="" required>
-                            <i class="far fa-eye"  id="togglePassword" style="margin-left: 460px; cursor: pointer;"></i>
-                            <p align="right" class="mt-2"><a href="">Forgot Password</a></p>
-                            <div class="captcha mb-2">
-                                <p>Please check the box below to proceed.</p>
-                                <img src="../images/captcha.png">
-                            </div>
-                            <p class="text-center pt-2">
-                                Don't have an account ?
-                                <a href="register.php" style="text-decoration: none; color:red;">Register.</a>
-                            </p>
-                            <button type="submit" class="btn btn-primary w-100" name="login">Login</button>
-                        </form>
-                </div><!--col-md-4-->
+                    <form action="" method="post">
+                        <label for="email" class="form-label pt-2"><b>Email :</b></label>
+                        <input type="text" name="email" class="form-control" placeholder="e.g my@gmail.com" value="" required>
+                        <label for="password" class="form-label pt-2"><b>Password :</b></label>
+                        <input type="password" name="password" id="id_password" class="form-control" value="" required>
+                        <i class="far fa-eye"  id="togglePassword" style="margin-left: 460px; cursor: pointer;"></i>
+                        <p align="right" class="mt-2"><a href="">Forgot Password</a></p>
+                        <div class="captcha mb-2">
+                            <p>Please check the box below to proceed.</p>
+                            <img src="../images/captcha.png">
+                        </div>
+                        <p class="text-center pt-2">
+                            Don't have an account ?
+                            <a href="register.php" style="text-decoration: none; color:red;">Register.</a>
+                        </p>
+                        <button type="submit" class="btn btn-primary w-100" name="login">Login</button>
+                    </form>
+                </div><!--col-md-6-->
+                <div class="col-md-6 my-auto">
+                    <table class="w-100 text-center table-bordered table-hover">
+                        <thead>
+                            <tr><h5 class="text-center bg-info p-2 text-white fst-italic">‿︵‿︵ʚɞ Use These Emails  ʚɞ‿︵‿︵</h5></tr> 
+                            <tr>
+                                <th>Sr. No</th>
+                                <th>Email</th>
+                                <th>Password</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-1">1.</td>
+                                <td>admin@gmail.com</td>
+                                <td>admin2022</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1">2.</td>
+                                <td>teacher@gmail.com</td>
+                                <td>teacher2022</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1">3.</td>
+                                <td>proctor@gmail.com</td>
+                                <td>proctor2022</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1">4.</td>
+                                <td>teammate@gmail.com</td>
+                                <td>teammate2022</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1">5.</td>
+                                <td>student@gmail.com</td>
+                                <td>student2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!--col-md-6-->
             </div><!--row-->
         </div><!--container-->
     </section>
