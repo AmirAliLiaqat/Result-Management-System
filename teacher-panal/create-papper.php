@@ -5,6 +5,7 @@
     if(isset($_POST['save'])) {
         // var_dump($_POST);
         $papperName = $_POST['pappers'];
+        $questionNumber = $_POST['questionNumber'];
         $question = $_POST['question'];
         $firstOption = $_POST['option1'];
         $secondOption = $_POST['option2'];
@@ -24,8 +25,8 @@
                 //     </div>
                 // </div>";
             // } else {
-                $sql = "INSERT INTO `pappers`(`papper_name`, `question`, `option1`, `option2`, `option3`, `option4`, `correct_answer`) 
-                VALUES ('$papperName','$question','$firstOption','$secondOption','$thirdOption','$fourthOption','$correctOption')";
+                $sql = "INSERT INTO `pappers`( `question_number`, `papper_name`, `question`, `option1`, `option2`, `option3`, `option4`, `correct_answer`) 
+                VALUES ('$questionNumber','$papperName','$question','$firstOption','$secondOption','$thirdOption','$fourthOption','$correctOption')";
 
                 $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
 
@@ -96,6 +97,12 @@
                                 </div><!--col-md-6-->
                             </div><!--row-->
                             <div class="papper_field">
+                                <div class="row m-2">
+                                    <div class="col-md-3">
+                                        <label for="questionNumber" class="form-label">Question No.</label>
+                                        <input type="text" name="questionNumber" id="" class="form-control" min="0" max="100" required>
+                                    </div><!--col-md-3-->
+                                </div><!--row-->
                                 <div class="row m-2 questions">
                                     <div class="col-md-12">
                                         <label class="form-label" for="question">Type Question:</label>
