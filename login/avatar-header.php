@@ -40,7 +40,7 @@
                             <?php echo $_SESSION['first_name']; ?>
                         </span>
                         <img src="../images/avatar.png">
-                        <div class="avatar_profile">
+                        <div class="avatar_profile" style="margin-left:-25px;">
                             <a href="edit-user.php?id=<?php echo $_SESSION['user_id']; ?>" class="btn btn-secondary text-start w-100">Edit Profile</a>
                             <a href="delete-user.php?id=<?php echo $_SESSION['user_id']; ?>" class="btn btn-secondary text-start w-100">Delete Accont</a>
                             <a href="logout.php?id=<?php echo $_SESSION['user_id']; ?>" class="btn btn-secondary text-start w-100">Logout</a>
