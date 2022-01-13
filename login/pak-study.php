@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <?php require 'header.php'; ?>
+    <?php require 'avatar-header.php'; ?>
 
     <!-------------------- Section Start -------------------->
     <section style="overflow:hidden">
