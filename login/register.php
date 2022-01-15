@@ -8,6 +8,7 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
         $cpassword = $_POST['cpassword'];
+        $code = rand();
 
         $checkEmail = "SELECT * FROM `student-accounts` WHERE email = '$email'";
         $query = mysqli_query($conn, $checkEmail) or die("Query Failed");
@@ -16,8 +17,8 @@
            if(!mysqli_num_rows($query) > 0) {
                 if(strlen($password) > 8 && strlen($password) < 20) {
                     if($password === $cpassword) {
-                        $sql = "INSERT INTO `student-accounts`(`first_name`, `last_name`, `email`, `password`) 
-                        VALUES ('$firstName','$lastName','$email', md5('$password'))";
+                        $sql = "INSERT INTO `student-accounts`(`first_name`, `last_name`, `email`, `password`, `code`) 
+                        VALUES ('$firstName','$lastName','$email', md5('$password'), md5('$code'))";
                         $result = mysqli_query($conn, $sql) or die("Query Failed");
 
                         echo " <div class='row'>
