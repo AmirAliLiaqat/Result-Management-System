@@ -49,6 +49,7 @@
     <link rel="stylesheet" href="../css/style.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -72,10 +73,10 @@
                                     <label for="password" class="form-label pt-2"><b>Password :</b></label>
                                     <input type="password" name="password" id="id_password" class="form-control" value="" required>
                                     <i class="far fa-eye"  id="togglePassword" style="margin-left: 430px; cursor: pointer;"></i>
-                                    <p align="right" class="mt-2"><a href="">Forgot Password</a></p>
+                                    <p align="right" class="mt-2"><a href="forgot-password.php">Forgot Password</a></p>
                                     <div class="captcha mb-2">
                                         <p>Please check the box below to proceed.</p>
-                                        <img src="../images/captcha.png">
+                                        <div class="g-recaptcha" data-sitekey="6Lf3YRQeAAAAAJymhp2AXO-UGI6m3CrqCvANxmQd"></div><!--g-recaptcha-->
                                     </div><!--captcha-->
                                     <p class="text-center pt-2">
                                         Don't have an account ?
@@ -96,33 +97,26 @@
                                             <th>Password</th>
                                         </tr>
                                     </thead>
+                                    <?php
+                                        require '../main-files/conn.php';
+
+                                        $sql = "SELECT * FROM `student-accounts`";
+                                        $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
+
+                                        if(mysqli_num_rows($query) > 0) {
+                                            while($row = mysqli_fetch_assoc($query)) {
+                                    ?>
                                     <tbody>
                                         <tr>
-                                            <td class="p-1">1.</td>
-                                            <td>admin@gmail.com</td>
-                                            <td>admin2022</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-1">2.</td>
-                                            <td>teacher@gmail.com</td>
-                                            <td>teacher2022</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-1">3.</td>
-                                            <td>proctor@gmail.com</td>
-                                            <td>proctor2022</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-1">4.</td>
-                                            <td>teammate@gmail.com</td>
-                                            <td>teammate2022</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-1">5.</td>
-                                            <td>student@gmail.com</td>
-                                            <td>student2022</td>
+                                            <td class="p-1"> <?php echo $row['id']; ?> </td>
+                                            <td> <?php echo $row['email']; ?> </td>
+                                            <td style="text-transform:lowercase"> <?php echo $row['first_name']; ?>2022</td>
                                         </tr>
                                     </tbody>
+                                    <?php
+                                            }
+                                        }
+                                    ?>
                                 </table>
                             </div><!--col-md-6-->
                         </div><!--row-->
