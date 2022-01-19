@@ -105,13 +105,13 @@
     function grade($array) {
         $result = percentage($array);
         if($result >= 90) {
-            echo "A";
+            return "A";
         } elseif($result >= 70) {
-            echo " B";
+            return " B";
         } elseif($result >= 50) {
-            echo " C";
+            return " C";
         } else {
-            echo " D";
+            return " D";
         }
     }
     grade($numbers);

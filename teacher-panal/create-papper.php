@@ -3,9 +3,8 @@
     require '../main-files/messages.php';
     
     if(isset($_POST['save'])) {
-        // var_dump($_POST);
         $papperName = $_POST['pappers'];
-        $questionNumber = $_POST['questionNumber'];
+        $questionNo = $_POST['questionNo'];
         $question = $_POST['question'];
         $firstOption = $_POST['option1'];
         $secondOption = $_POST['option2'];
@@ -17,7 +16,7 @@
         $query = mysqli_query($conn, $checkQuestion) or die("Query Failed" . mysqli_connect_error());
 
         if(!mysqli_num_rows($query) > 0) {
-            // if("SELECT * FROM `pappers` WHERE papper_name = '$papperName < 5'  ") {
+            // if("SELECT * FROM `pappers` WHERE subject = '$papperName < 5'  ") {
                 // echo " <div class='row'>
                 //     <div class='alert alert-success alert-dismissible fade show' role='alert'>
                 //         <strong>You don't have an access to add more than 5 questions of this catagiery...</strong>.
@@ -25,8 +24,8 @@
                 //     </div>
                 // </div>";
             // } else {
-                $sql = "INSERT INTO `pappers`( `question_number`, `papper_name`, `question`, `option1`, `option2`, `option3`, `option4`, `correct_answer`) 
-                VALUES ('$questionNumber','$papperName','$question','$firstOption','$secondOption','$thirdOption','$fourthOption','$correctOption')";
+                $sql = "INSERT INTO `pappers`( `Q. No`, `subject`, `question`, `option1`, `option2`, `option3`, `option4`, `correct_answer`) 
+                VALUES ('$questionNo','$papperName','$question','$firstOption','$secondOption','$thirdOption','$fourthOption','$correctOption')";
 
                 $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
 
@@ -99,7 +98,7 @@
                             <div class="papper_field">
                                 <div class="row m-2">
                                     <div class="col-md-3">
-                                        <label for="questionNumber" class="form-label">Question No.</label>
+                                        <label for="questionNo" class="form-label">Question No.</label>
                                         <input type="text" name="questionNumber" id="" class="form-control" min="0" max="100" required>
                                     </div><!--col-md-3-->
                                 </div><!--row-->
