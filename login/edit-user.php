@@ -68,55 +68,55 @@
                         ?>
                         <form action="" method="post">
                             <div class="row px-3 py-2">
-                                <div class="col-md-6">   
+                                <div class="col-md-4">   
                                     <label for="fname" class="form-label"><b>First Name :</b></label>
-                                </div><!--col-md-6-->
+                                </div><!--col-md-4-->
                                 <div class="col-md-6">
                                     <input type="hidden" name="id" class="form-control" value="<?php echo $row['id']; ?>" required>
                                     <input type="text" name="fname" class="form-control" value="<?php echo $row['first_name']; ?>" required>
                                 </div><!--col-md-6-->
                             </div><!--row-->
                             <div class="row px-3 py-2">
-                                <div class="col-md-6">   
+                                <div class="col-md-4">   
                                     <label for="lname" class="form-label"><b>Last Name :</b></label> <br>
-                                </div><!--col-md-6-->
+                                </div><!--col-md-4-->
                                 <div class="col-md-6">
                                     <input type="text" name="lname" class="form-control" value="<?php echo $row['last_name']; ?>" required>
                                 </div><!--col-md-6-->
                             </div><!--row-->
                             <div class="row px-3 py-2">
-                                <div class="col-md-6">   
+                                <div class="col-md-4">   
                                     <label for="email" class="form-label"><b>Email :</b></label> 
-                                </div><!--col-md-6-->
+                                </div><!--col-md-4-->
                                 <div class="col-md-6">
                                     <input type="text" name="email" class="form-control" value="<?php echo $row['email']; ?>" required>
                                 </div><!--col-md-6-->
                             </div><!--row-->
                             <div class="row px-3 py-2">
-                                <div class="col-md-6">   
+                                <div class="col-md-4">   
                                     <label for="currentPassword" class="form-label"><b>Current Password :</b></label>
-                                </div><!--col-md-6-->
+                                </div><!--col-md-4-->
                                 <div class="col-md-6">
-                                    <input type="password" name="currentPassword" id="id_currentPassword" class="form-control" value="<?php echo $row['password']; ?>">
-                                    <i class="far fa-eye"  id="togglecurrentPassword" style="margin-left: 535px; cursor: pointer;"></i>
+                                    <input type="password" name="currentPassword" id="id_currentPassword" class="form-control" style="position: relative;" value="<?php echo $row['password']; ?>">
+                                    <i class="far fa-eye"  id="togglecurrentPassword" style="margin-left: 535px; margin-top: -25px; cursor: pointer; position: absolute;"></i>
                                 </div><!--col-md-6-->
                             </div><!--row-->
                             <div class="row px-3 py-2">
-                                <div class="col-md-6">   
+                                <div class="col-md-4">   
                                     <label for="password" class="form-label"><b>New Password :</b></label>
-                                </div><!--col-md-6-->
+                                </div><!--col-md-4-->
                                 <div class="col-md-6">
-                                    <input type="password" name="password" id="id_password" class="form-control" value="">
-                                    <i class="far fa-eye"  id="togglePassword" style="margin-left: 535px; cursor: pointer;"></i>
+                                    <input type="password" name="password" id="id_password" class="form-control" style="position: relative;" value="">
+                                    <i class="far fa-eye"  id="togglePassword" style="margin-left: 535px; margin-top: -25px; cursor: pointer; position: absolute;"></i>
                                 </div><!--col-md-6-->
                             </div><!--row-->
                             <div class="row px-3 py-2">
-                                <div class="col-md-6">   
+                                <div class="col-md-4">   
                                     <label for="cpassword" class="form-label"><b>Confirm Password :</b></label>
-                                </div><!--col-md-6-->
+                                </div><!--col-md-4-->
                                 <div class="col-md-6">
-                                    <input type="password" name="cpassword" id="id_cpassword" class="form-control" value="">
-                                    <i class="far fa-eye"  id="toggleCpassword" style="margin-left: 535px; cursor: pointer;"></i>
+                                    <input type="password" name="cpassword" id="id_cpassword" class="form-control" style="position: relative;" value="">
+                                    <i class="far fa-eye"  id="toggleCpassword" style="margin-left: 535px; margin-top: -25px; cursor: pointer; position: absolute;"></i>
                                 </div><!--col-md-6-->
                             </div><!--row-->
                             <button type="submit" class="btn btn-primary mx-3" name="update">Update</button>

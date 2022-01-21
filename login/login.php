@@ -68,8 +68,8 @@
                         <label for="email" class="form-label pt-2"><b>Email :</b></label>
                         <input type="text" name="email" class="form-control" placeholder="e.g my@gmail.com" value="" required>
                         <label for="password" class="form-label pt-2"><b>Password :</b></label>
-                        <input type="password" name="password" id="id_password" class="form-control" value="" required>
-                        <i class="far fa-eye"  id="togglePassword" style="margin-left: 460px; cursor: pointer;"></i>
+                        <input type="password" name="password" id="id_password" class="form-control" style="position: relative;" value="" required>
+                        <i class="far fa-eye"  id="togglePassword" style="margin-left: 460px; margin-top: -25px; cursor: pointer; position: absolute;"></i>
                         <p align="right" class="mt-2"><a href="forgot-password.php">Forgot Password</a></p>
                         <div class="captcha mb-2">
                             <p>Please check the box below to proceed.</p>

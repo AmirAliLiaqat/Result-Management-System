@@ -114,8 +114,8 @@
                         <span>Length must be between 8 characters and 20 characters.</span>
                     </div><!--col-md-6-->
                     <div class="col-md-6">
-                        <input type="password" name="password" id="id_password" class="form-control" value="" required>
-                        <i class="far fa-eye"  id="togglePassword" style="margin-left: 510px; cursor: pointer;"></i>
+                        <input type="password" name="password" id="id_password" class="form-control" style="position: relative;" value="" required>
+                        <i class="far fa-eye"  id="togglePassword" style="margin-left: 510px; margin-top: -25px; cursor: pointer; position: absolute;"></i>
                     </div><!--col-md-6-->
                 </div><!--row-->
                 <div class="row px-3 py-2">
@@ -124,8 +124,8 @@
                         <span>Length must be between 8 characters and 20 characters.</span>
                     </div><!--col-md-6-->
                     <div class="col-md-6">
-                        <input type="password" name="cpassword" id="id_cpassword" class="form-control" value="" required>
-                        <i class="far fa-eye"  id="toggleCpassword" style="margin-left: 510px; cursor: pointer;"></i>
+                        <input type="password" name="cpassword" id="id_cpassword" class="form-control" style="position: relative;" value="" required>
+                        <i class="far fa-eye"  id="toggleCpassword" style="margin-left: 510px; margin-top: -25px; cursor: pointer; position: absolute;"></i>
                     </div><!--col-md-6-->
                     <p class=" pt-4">
                         Already have an account ?
