@@ -22,19 +22,19 @@
                     </ul>
                 </div><!--col-md-6-->
                 <div class="col-md-6 text-white d-flex justify-content-end ">
-                    <a href="https://www.facebook.com" class="text-white"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.twitter.com" class="text-white"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.youtube.com" class="text-white"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.instagram.com" class="text-white"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.google.com" class="text-white"><i class="fab fa-google"></i></a>
-                    <a href="https://www.github.com" class="text-white"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com" class="text-white"><i class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="https://www.twitter.com" class="text-white"><i class="fab fa-twitter text-info"></i></a>
+                    <a href="https://www.youtube.com" class="text-white"><i class="fab fa-youtube text-danger"></i></a>
+                    <a href="https://www.instagram.com" class="text-white"><i class="fab fa-instagram text-danger"></i></a>
+                    <a href="https://www.google.com" class="text-white"><i class="fab fa-google text-success"></i></a>
+                    <a href="https://www.github.com" class="text-white"><i class="fab fa-github text-light"></i></a>
                 </div><!--col-md-6-->
             </div><!--row-->
             <div class="row mt-2">
                 <div class="col-md-12">
                     <p class="text-white text-center">
                         © Copyright All Rights Reserved 
-                        <a href="http://localhost/result-management-system"  class="text-white">www.result-management-system.com</a>
+                        <a href="http://localhost/result-management-system">www.result-management-system.com</a>
                     </p>
                 </div><!--col-md-12-->
             </div><!--row-->
