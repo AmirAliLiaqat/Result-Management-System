@@ -1,3 +1,52 @@
+<?php
+    require '../main-files/conn.php';
+    require 'avatar-header.php';
+
+    $sql = "SELECT * FROM `exams` WHERE subject = 'eng'";
+    $selected_question = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
+
+    if(isset($_POST['submit'])) {
+        if(mysqli_num_rows($selected_question) > 0) {
+            $user_id =  $_SESSION['user_id'];
+            while($row = mysqli_fetch_assoc($selected_question)) {
+                if(isset($_POST['option' . $row['id']])) {
+                    $question_id = $row['id'];
+                    $selected_option = $_POST['option' . $row['id']];
+
+                    // if($_POST['option' . $row['id']] == null) {
+                    //     $_POST['option' . $row['id']] = 0;
+                    //     var_dump($_POST['option' . $row['id']]);
+                    // }
+
+                    // echo $question_id . "<br>";
+                    // echo $selected_option . "<br>";
+                    // echo $selected_question . "<br>";
+
+                    // echo "<pre>";
+                    // var_dump($row['Q. No']);
+                    // var_dump($row['question']);
+                    // echo $selected_option = $_POST['option' . $row['id']];
+                    // echo "</pre>";
+
+                    // if($selected_option === $row['correct_answer']) {
+                    //     echo $marks = 10;
+                    // } elseif($_POST['option' . $row['id']] === null){
+                    //     echo $marks = 0;
+                    // } 
+
+                    // exit();
+
+                    $sql = "INSERT INTO `exam-details`(`user_id`, `question_id`, `selected_option`) 
+                        VALUES ('$user_id','$question_id','$selected_option')";
+                    $query  = mysqli_query($conn, $sql) or die("Query Failed...");
+
+                    header("location: welcome.php");
+
+                } 
+            }
+        }
+    }
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +61,6 @@
 </head>
 <body>
 
-    <?php require 'avatar-header.php'; ?>
 
     <!-------------------- Section Start -------------------->
     <section style="overflow:hidden">
@@ -26,61 +74,27 @@
                         </div><!--card-header-->
                         <div class="card-body">
                             <form action="" method="post">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <p>Name : <input type="text" name="name" id="" class="form-control"></p>
-                                        <p>Student Id : <input type="text" name="stuId" id="" class="form-control"></p>
-                                        <input type="hidden" name="total" id="" class="form-control">
-                                        <input type="hidden" name="obtain" id="" class="form-control">
-                                        <input type="hidden" name="per" id="" class="form-control">
-                                    </div><!--col-md-6-->
-                                    <div class="col-md-5 justify-content-end">
-                                        <p>Father : <input type="text" name="father" id="" class="form-control"></p>
-                                        <p>Class : <input type="text" name="class" id="" class="form-control"></p>
-                                    </div><!--col-md-6-->
-                                    <div class="col-md-2">
-                                        <div id="app" class="my-4"></div>
-                                    </div>
-                                </div><!--row-->
+                                <h4>Tick the correct answer from these fours options... <strong>5 X 10 = 50 Marks</strong></h4>
                                 <hr>
-                                <h4>Tick the correct answer from these fours options... <strong align="right">5 X 10 = 50 Marks</strong></h4>
                                 <?php  
-                                    require '../main-files/conn.php';
-                                    
-                                    $sql = "SELECT * FROM `pappers` WHERE papper_name = 'eng'";
-                                    $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
-
-                                    if(mysqli_num_rows($query) > 0) {
-                                        while($row = mysqli_fetch_assoc($query)) {
-                                        
+                                    if(mysqli_num_rows($selected_question) > 0) {
+                                        while($row = mysqli_fetch_assoc($selected_question)) {
                                 ?>
                                 <div class="row">
                                     <div class="col-12">
-                                        <h5><?php echo $row['question_number']; ?> <?php echo $row['question']; ?></h5>
-                                        <ul class="question-1" style="list-style:none; padding:0">
+                                        <h5><?php echo $row['Q. No']; ?> <?php echo $row['question']; ?></h5>
+                                        <ul style="list-style:none; padding:0px;">
                                             <li>
-                                                <div class="form-check">
-                                                    <label class="form-check-label" for="exampleRadios1"><?php echo $row['option1']; ?></label>
-                                                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1">
-                                                </div>
+                                                <input class="form-check-input" type="radio" name="option<?php echo $row['id']; ?>" value="<?php echo $row['option1']; ?>"> <?php echo $row['option1']; ?>
                                             </li>
                                             <li>
-                                                <div class="form-check">
-                                                    <label class="form-check-label" for="exampleRadios2"><?php echo $row['option2']; ?></label>
-                                                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
-                                                </div>
+                                                <input class="form-check-input" type="radio" name="option<?php echo $row['id']; ?>" value="<?php echo $row['option2']; ?>"> <?php echo $row['option2']; ?>
                                             </li>
                                             <li>
-                                                <div class="form-check">
-                                                    <label class="form-check-label" for="exampleRadios3"><?php echo $row['option3']; ?></label>
-                                                    <input class="form-check-input true" type="checkbox" name="myAnswer1" id="exampleRadios3" value="option3">
-                                                </div>
+                                                <input class="form-check-input" type="radio" name="option<?php echo $row['id']; ?>" value="<?php echo $row['option3']; ?>"> <?php echo $row['option3']; ?>
                                             </li>
                                             <li>
-                                                <div class="form-check">
-                                                    <label class="form-check-label" for="exampleRadios4"><?php echo $row['option4']; ?></label>
-                                                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4" value="option4">
-                                                </div>
+                                                <input class="form-check-input" type="radio" name="option<?php echo $row['id']; ?>" value="<?php echo $row['option4']; ?>"> <?php echo $row['option4']; ?>
                                             </li>
                                         </ul>
                                     </div><!--col-12-->
@@ -88,16 +102,16 @@
                                 <?php
                                         }
                                     }
-                                ?>
-                                <button class="btn btn-primary w-100" name="submit">Submit</button>
+                                ?>     
+                                <button class="btn btn-primary w-100" name="submit" id="submit_exam">Submit</button>
                             </form>
                             <hr>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p>Teacher Sign :  <img src="../images/signature.png" style="width: 300px;"></p>
+                                    <p>Teacher Sign :  <img src="../images/signature.png" style="width: 200px;"></p>
                                 </div><!--col-md-6-->
                                 <div class="col-md-6">
-                                    <p>Principal Sign :  <img src="../images/signature1.png" style="width: 300px;"></p>
+                                    <p>Principal Sign :  <img src="../images/signature1.png" style="width: 200px;"></p>
                                 </div><!--col-md-6-->
                             </div><!--row-->
                         </div><!--card-body-->
@@ -112,7 +126,7 @@
     </section> 
     <!-------------------- Section End -------------------->
 
-    <?php include '../footer.php'; ?>
+    <?php require '../exams/footer.php'; ?>
 
 </body>
 </html>
