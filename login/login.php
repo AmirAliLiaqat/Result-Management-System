@@ -21,10 +21,12 @@
             } elseif($email === 'teacher@gmail.com'){
                 $_SESSION['user_id'] = $row['id'];
                 $_SESSION['first_name'] = $row['first_name'];
+                $_SESSION['last_name'] = $row['last_name'];
                 header("Location: ../teacher-panal/dashboard.php");
             } else {
                 $_SESSION['user_id'] = $row['id'];
                 $_SESSION['first_name'] = $row['first_name'];
+                $_SESSION['last_name'] = $row['last_name'];
                 // $_SESSION['$_COOKIE["user_id"]'] = $row['id'];
                 // $_SESSION['$_COOKIE["first_name"]'] = $row['first_name'];
                 header("Location: welcome.php");
