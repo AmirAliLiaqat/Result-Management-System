@@ -1,3 +1,15 @@
+<?php 
+    require '../main-files/conn.php';
+    require '../main-files/methods.php';
+    require 'avatar-header.php';
+
+    $user_id =  $_SESSION['user_id'];
+
+    $subjects = [1 => "eng", 2 => "urdu", 3 => "maths", 4 => "phy", 5 => "chem", 
+    6 => "bio", 7 => "comp", 8 => "isl", 9 => "pak"];
+
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,173 +24,90 @@
 </head>
 <body>
 
-    <!-------------------- Header Start -------------------->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark  bg-dark" >
-            <div class="container">
-                <a class="navbar-brand" href="http://localhost/result-management-system/index.php"><img src="../images/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  m-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="http://localhost/result-management-system/index.php">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Pages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="user-porfile text-white" style="font-size:18px;">
-                        <i class="fas fa-user-circle"></i>
-                        Hello,
-                        <!-- <?php echo $_SESSION['id']; ?> -->
-                        <div class="user-setting">
-                            <ul>
-                                <li><a href="#">View Profile</a></li>
-                                <li><a href="#">Delete Account</a></li>
-                                <li><a href="#">Logout</a></li>
-                            </ul>
-                        </div><!--user-setting-->
-                    </div><!--user-porfile-->
-                </div><!--collapse-->
-            </div><!--container-->
-        </nav>
-    </header>
-   <!-------------------- Header End -------------------->
-
     <!-------------------- Section Start -------------------->
     <section>
        <div class="container my-5">
-            <div class="row justify-content-center">
-                <div class="col-md-8 p-0" style="background: #ccc; border-radius: 15px;">
-                    <div class="card-header">
-                        <h4>STUDENT <br> REPORT CARD</h4>
-                        <img src="../images/logo.png" alt="">
-                    </div><!--card-header-->
-                    <div class="card-body">
-                        <div class="row" style="font-weight:bold; font-style:italic">
-                            <div class="col-md-4">
-                                <p>Student Id : <input type="text" name="name" id="" class="form-control"></p>
-                                <p>Class : <input type="stuId" name="name" id="" class="form-control"></p>
-                            </div><!--col-md-4-->
-                            <div class="col-md-4 justify-content-end">
-                                <p>Name : <input type="father" name="name" id="" class="form-control"></p>
-                                <p>Grade : <input type="class" name="name" id="" class="form-control"></p>
-                            </div><!--col-md-4-->
-                            <div class="col-md-4 justify-content-end">
-                                <p>Father : <input type="father" name="name" id="" class="form-control"></p>
-                                <p>Year : <input type="class" name="name" id="" class="form-control"></p>
-                            </div><!--col-md-4-->
-                        </div><!--row-->
-                        <div class="row">
-                            <table class="table table-hover table-striped table-bordered">
-                                <thead>
-                                    <tr class="text-center">
-                                        <th> <p> <b>Sr. No</b> </p> </th>
-                                        <th> <p> <b>Subjects</b> </p> </th>
-                                        <th> <p> <b>Full Marks</b> </p> </th>
-                                        <th> <p> <b>Obtained</b> </p> </th>
-                                        <th> <p> <b>Percentage</b> </p> </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> 1- </td>
-                                        <td> English </td>
-                                        <td> 100 </td>
-                                        <td> 93 </td>
-                                        <td> 93.85% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> Total </td>
-                                        <td>  </td>
-                                        <td> 800 </td>
-                                        <td> 720 </td>
-                                        <td> 96.5% </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td> Grade </td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td> A+ </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div><!--row-->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p align="center">Teacher Sign :  <img src="../images/signature.png" style="width: 300px;"></p>
-                            </div><!--col-md-6-->
-                            <div class="col-md-6">
-                                <p align="center">Principal Sign :  <img src="../images/signature1.png" style="width: 300px;"></p>
-                            </div><!--col-md-6-->
-                        </div><!--row-->
-                    </div><!--card-body-->
-                    <div class="card-footer">
-                        <p class="text-center">“The best way to predict your future is to create it” - <strong><a href="https://en.wikipedia.org/wiki/Abraham_Lincoln">Abraham Lincoln</a></strong></p>
-                        <p class="text-center"><a href="http://localhost/result-management-system">www.result-management-system.com</a></p>
-                    </div><!--card-footer-->
-                </div><!--col-md-8-->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-white text-center p-2 bg-primary">
+                        View all the subjects result individually.
+                    </div><!--text-white text-center-->
+                    <table class="w-100 text-center table-bordered">
+                        <?php
+                            foreach ($subjects as $id => $subject) {
+                        ?>
+                        <tbody>
+                            <tr>
+                                <td> <?php echo $id; ?>. </td>
+                                <td class="text-capitalize"> <?php echo $subject; ?> </td>
+                                <td> 
+                                    <a href="view-result.php?subject=<?php echo $subject; ?>" class="btn btn-primary my-1">Show Result</a> 
+                                </td>
+                            </tr>
+                        </tbody>
+                        <?php
+                            }
+                        ?>
+                    </table>
+                </div><!--col-md-6-->
+                <div class="col-md-6">
+                    <div class="text-white text-center p-2 bg-success">
+                        View full subjects listed result card.
+                    </div><!--text-white text-center-->
+                    <?php  
+                        require '../main-files/conn.php';
+                        
+                        $sql = "SELECT * FROM `student-data`WHERE id = 1";
+                        $query = mysqli_query($conn, $sql) or die("Query Failed");
+                        if(mysqli_num_rows($query) > 0) {
+                            while($row = mysqli_fetch_assoc($query)) {
+                            
+                    ?>
+                    <table class="table table-hover table-striped table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th> <p> <b>Sr. No</b> </p> </th>
+                                <th> <p> <b>Subjects</b> </p> </th>
+                                <th> <p> <b>Total Marks</b> </p> </th>
+                                <th> <p> <b>Obtained</b> </p> </th>
+                                <th> <p> <b>Percentage</b> </p> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                                foreach ($subjects as $id => $subject) {
+                            ?>
+                            <tr>
+                                <td> <?php echo $id; ?>. </td>
+                                <td class="text-capitalize"> <?php echo $subject; ?> </td>
+                                <td> 50 </td>
+                                <td> <?php echo 40; ?> </td>
+                                <td> <?php echo $row['percentage']; ?> % </td>
+                            </tr>
+                            <?php
+                                }
+                            ?>
+                            <tr>
+                                <td> Total </td>
+                                <td>  </td>
+                                <td> 450 </td>
+                                <td> 360 </td>
+                                <td> 96.5% </td>
+                            </tr>
+                            <tr>
+                                <td> Grade </td>
+                                <td>  </td>
+                                <td>  </td>
+                                <td>  </td>
+                                <td> A+ </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <?php
+                            }
+                        }
+                    ?>
+                </div><!--col-md-6-->
             </div><!--row-->
        </div><!--container-->
     </section>

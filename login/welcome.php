@@ -1,3 +1,12 @@
+<?php
+    // $links = ["english.php", "urdu.php", "maths.php", "physics.php", "chemistry.php", 
+    // "biology.php", "computer.php", "islamiyat.php", "pak-study.php"];
+    // var_dump( $links);
+    // foreach ($links as $link) {
+    //     echo $link;
+    // }
+    // exit();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,9 +28,14 @@
        <div class="container my-5">
             <h3 class="text-center text-uppercase fst-italic py-3" style="color:blue">Select the papper you want to do</h3>
             <div class="row">
-                <div class="col-md-4 text-white text-center p-2 bg-primary">Total Pappers = 20</div><!--col-md-4-->
-                <div class="col-md-4 text-white text-center p-2 bg-success">Taken Pappers = 13</div><!--col-md-4-->
-                <div class="col-md-4 text-white text-center p-2 bg-info">Pendding Pappers = 7</div><!--col-md-4-->
+                <div class="col-md-3 text-white text-center p-2 bg-primary">Total Pappers = 9</div><!--col-md-3-->
+                <div class="col-md-3 text-white text-center p-2 bg-success">Taken Pappers = 3</div><!--col-md-3-->
+                <div class="col-md-3 text-white text-center p-2 bg-info">Pendding Pappers = 6</div><!--col-md-3-->
+                <div class="col-md-3 text-white text-center">
+                    <a href="result.php" class="btn btn-primary">
+                        View Result
+                    </a>
+                </div><!--col-md-3-->
             </div><!--row-->
             <div class="row py-5">
                 <div class="col-md-12">
@@ -35,49 +49,24 @@
                                 <th class="p-2">Status</th>
                             </tr>
                         </thead>
+                        <?php
+                            $links = ["english.php", "urdu.php", "maths.php", "physics.php", "chemistry.php", 
+                            "biology.php", "computer.php", "islamiyat.php", "pak-study.php"];
+                            
+                            $subjects = [1 => "English", 2 => "Urdu", 3 => "Maths", 4 => "Physics", 5 => "Chemistry", 
+                            6 => "Biology", 7 => "Computer", 8 => "Islamiyat", 9 => "Pak Study"];
+                            foreach ($subjects as $id => $subject) {
+                        ?>
                         <tbody>
                             <tr>
-                                <td>1.</td>
-                                <td>English</td>
-                                <td>50</td>
+                                <td> <?php echo $id; ?>. </td>
+                                <td> <?php echo $subject; ?> </td>
+                                <td> 50 </td>
+                                <?php
+                                   
+                                ?>
                                 <td>
-                                    <a href="english.php" class="btn btn-primary m-1 fst-italic" name="press">Start Now</a>
-                                </td>
-                                <td class="text-success">
-                                    <i class="far fa-check-circle"></i>
-                                    <h6>Taken</h6>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Urdu</td>
-                                <td>50</td>
-                                <td>
-                                    <a href="urdu.php" class="btn btn-primary m-1 fst-italic">Start Now</a>
-                                </td>
-                                <td class="text-danger">
-                                    <i class="far fa-times-circle"></i>
-                                    <h6>Pendding</h6>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.</td>
-                                <td>Maths</td>
-                                <td>50</td>
-                                <td>
-                                    <a href="maths.php" class="btn btn-primary m-1 fst-italic">Start Now</a>
-                                </td>
-                                <td class="text-success">
-                                    <i class="far fa-check-circle"></i>
-                                    <h6>Taken</h6>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4.</td>
-                                <td>Computer</td>
-                                <td>50</td>
-                                <td>
-                                    <a href="" class="btn btn-primary m-1 fst-italic">Start Now</a>
+                                    <a href="<?php echo $links[$id - 1]; ?>" class="btn btn-primary m-1 fst-italic"  name="press">Start Now</a>
                                 </td>
                                 <td class="text-success">
                                     <i class="far fa-check-circle"></i>
@@ -85,6 +74,9 @@
                                 </td>
                             </tr>
                         </tbody>
+                        <?php
+                            }
+                        ?>
                     </table>
                 </div><!--col-md-12-->
             </div><!--row-->

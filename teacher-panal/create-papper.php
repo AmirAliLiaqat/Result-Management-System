@@ -1,6 +1,8 @@
 <?php 
     require '../main-files/conn.php'; 
     require '../main-files/messages.php';
+
+    error_reporting();
     
     if(isset($_POST['save'])) {
         $papperName = $_POST['pappers'];
@@ -12,19 +14,11 @@
         $fourthOption = $_POST['option4'];
         $correctOption = $_POST['correctOption'];
 
-        $checkQuestion = "SELECT * FROM `pappers` WHERE question = '$question'";
+        $checkQuestion = "SELECT * FROM `exams` WHERE question = '$question'";
         $query = mysqli_query($conn, $checkQuestion) or die("Query Failed" . mysqli_connect_error());
 
         if(!mysqli_num_rows($query) > 0) {
-            // if("SELECT * FROM `pappers` WHERE subject = '$papperName < 5'  ") {
-                // echo " <div class='row'>
-                //     <div class='alert alert-success alert-dismissible fade show' role='alert'>
-                //         <strong>You don't have an access to add more than 5 questions of this catagiery...</strong>.
-                //         <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
-                //     </div>
-                // </div>";
-            // } else {
-                $sql = "INSERT INTO `pappers`( `Q. No`, `subject`, `question`, `option1`, `option2`, `option3`, `option4`, `correct_answer`) 
+                $sql = "INSERT INTO `exams`( `Q. No`, `subject`, `question`, `option1`, `option2`, `option3`, `option4`, `correct_answer`) 
                 VALUES ('$questionNo','$papperName','$question','$firstOption','$secondOption','$thirdOption','$fourthOption','$correctOption')";
 
                 $query = mysqli_query($conn, $sql) or die("Query Failed" . mysqli_connect_error());
@@ -35,7 +29,6 @@
                         <button type='button' class='btn-close mx-2' data-bs-dismiss='alert' aria-label='Close'></button>
                     </div>
                 </div>";
-            // }
 
         } else {
             echo " <div class='row'>
@@ -99,7 +92,7 @@
                                 <div class="row m-2">
                                     <div class="col-md-3">
                                         <label for="questionNo" class="form-label">Question No.</label>
-                                        <input type="text" name="questionNumber" id="" class="form-control" min="0" max="100" required>
+                                        <input type="text" name="questionNo" id="" class="form-control" min="0" max="100" required>
                                     </div><!--col-md-3-->
                                 </div><!--row-->
                                 <div class="row m-2 questions">
